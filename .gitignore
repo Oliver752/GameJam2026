@@ -1,0 +1,83 @@
+# ======================
+# Unity Generated Files
+# ======================
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Bb]uildReports/
+[Ll]ogs/
+[Rr]ecordings/
+[Uu]ser[Ss]ettings/
+MemoryCaptures/
+sysinfo.txt
+*.stackdump
+*.apk
+
+# Crashlytics / Android
+ProjectSettings/AndroidLogcatSettings.asset
+crashlytics_build_id.xml
+crashlytics_build_id.xml.meta
+
+# Addressables
+ServerData/
+Assets/AddressableAssetsData/link.xml
+Assets/AddressableAssetsData/link.xml.meta
+Assets/AddressableAssetsData/*/addressables_content_state.bin
+Assets/AddressableAssetsData/*/addressables_content_state.bin.meta
+
+# AssetBundles (if generated locally)
+AssetBundles/
+AssetBundles/*
+
+# Asset Store / Third-Party Tools
+Assets/AssetStoreTools*
+Assets/GUI Kit Casual Game*
+
+# JetBrains Rider
+.idea/
+Assets/Plugins/Editor/JetBrains*
+
+# ===============================
+# Visual Studio / MonoDevelop
+# ===============================
+.vs/
+*.userprefs
+*.csproj
+*.pidb
+*.pidb.meta
+*.suo
+*.sln
+*.sln*
+*.user
+.consulo/
+*.tmp
+*.svd
+
+# Visual Studio Code
+.vscode/
+
+# ==============
+# OS Generated
+# ==============
+.DS_Store*
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# =========
+# Misc
+# =========
+IgnoreSCM/
+IgnoreSCM.meta
+Assets/IgnoreSCM/
+Assets/IgnoreSCM.meta
+Worktrees/
+
+# Optional: If you’re using Rider or VS cache directories
+*.DotSettings.user
+.idea/.idea/
