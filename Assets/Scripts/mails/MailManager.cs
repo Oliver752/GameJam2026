@@ -15,4 +15,13 @@ public class MailManager : MonoBehaviour
     {
         return mails[Random.Range(0, mails.Length)];
     }
+    public void TakeMail()
+{
+    currentMail = GetRandomMail();
+}
+
+public bool HasMail()
+{
+    return !string.IsNullOrEmpty(currentMail);
+}
 }
