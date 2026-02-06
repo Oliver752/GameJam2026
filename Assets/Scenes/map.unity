@@ -5167,6 +5167,7 @@ MonoBehaviour:
     do not resist.\u201D "
   - "Email  Subject Space OptimizationSpace Optimization  From: Housing Authority
     To: Charles Roof \u201CWe are optimizing living space. Thank you for your cooperation.\u201D "
+  currentMail: 
 --- !u!4 &161847338
 Transform:
   m_ObjectHideFlags: 0
@@ -37484,6 +37485,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 77dc973614541674ab9b654ac2ed68ef, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1167400937}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 77dc973614541674ab9b654ac2ed68ef, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1167400938}
   m_SourcePrefab: {fileID: 100100000, guid: 77dc973614541674ab9b654ac2ed68ef, type: 3}
 --- !u!4 &1167400935 stripped
 Transform:
@@ -37510,12 +37514,26 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 36.25137, y: 60.97515, z: 30.322308}
   m_Center: {x: -2.1326108, y: -13.437062, z: -1.7916749}
+--- !u!114 &1167400938
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1167400936}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4efcaae0128b0094b9fd2ff87c3adbe6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::House
+  reactions:
+  - REALITY ERROR
 --- !u!1001 &1171294116
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -53870,6 +53888,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 77dc973614541674ab9b654ac2ed68ef, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1641210165}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 77dc973614541674ab9b654ac2ed68ef, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1641210166}
   m_SourcePrefab: {fileID: 100100000, guid: 77dc973614541674ab9b654ac2ed68ef, type: 3}
 --- !u!4 &1641210163 stripped
 Transform:
@@ -53896,12 +53917,26 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 38.699318, y: 65.34765, z: 31.60709}
   m_Center: {x: -4.428902, y: -4.594348, z: 2.4675083}
+--- !u!114 &1641210166
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1641210164}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4efcaae0128b0094b9fd2ff87c3adbe6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::House
+  reactions:
+  - BOOOOOM
 --- !u!1001 &1644635465
 PrefabInstance:
   m_ObjectHideFlags: 0
