@@ -4,41 +4,45 @@ public class HappinessManager : MonoBehaviour
 {
     public static HappinessManager Instance;
 
-    [Range(0, 100)]
-    public int happiness = 100;   // ✅ štart 100
+    [Header("Settings")]
+    public int maxHappiness = 100;
+    private int currentHappiness;
 
-    public HappinessBar happinessBar; // sem potiahni objekt so scriptom HappinessBar
+    [Header("UI")]
+    public HappinessBar happinessBar;
 
     private void Awake()
     {
         Instance = this;
-        happiness = 100;
+        currentHappiness = maxHappiness;
     }
 
     private void Start()
     {
-        RefreshUI();
+        UpdateUI();
     }
 
-    private void Update()
+    public void AddHappiness(int amount)
     {
-        // ✅ TEST klávesy (môžeš neskôr zmazať)
-        if (Input.GetKeyDown(KeyCode.Alpha1)) AddHappiness(-10);
-        if (Input.GetKeyDown(KeyCode.Alpha2)) AddHappiness(+10);
+        if (House.gameEnded) return; // Don't change if game ended
+
+        currentHappiness += amount;
+        currentHappiness = Mathf.Clamp(currentHappiness, 0, maxHappiness);
+        
+        UpdateUI();
+
+        // Check lose condition
+        if (currentHappiness <= 0)
+        {
+            GameEndManager.Instance?.TriggerLose();
+        }
     }
 
-    public void AddHappiness(int delta)
-    {
-        happiness = Mathf.Clamp(happiness + delta, 0, 100);
-        RefreshUI();
-        Debug.Log($"Happiness: {happiness}");
-    }
+    public int GetHappiness() => currentHappiness;
 
-    private void RefreshUI()
+    private void UpdateUI()
     {
         if (happinessBar != null)
-            happinessBar.SetHappiness(happiness);
-        else
-            Debug.LogWarning("[HappinessManager] happinessBar is not assigned.");
+            happinessBar.SetHappiness(currentHappiness);
     }
 }
