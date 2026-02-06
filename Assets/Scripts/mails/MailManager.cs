@@ -37,37 +37,43 @@ public class MailManager : MonoBehaviour
 private string BuildEmailText(MailAgency agency, string recipientName)
 {
     switch (agency)
-    {
-        case MailAgency.Witch:
-            return
-                "From: The Witch\n" +
-                $"To: {recipientName}\n" +
-                "“Oops.\nI mixed your address into a spell.\nAll of them.”";
+{
+    case MailAgency.Witch:
+        return
+            "<b>From:</b> The Witch\n\n" +
+            $"<b>To:</b> {recipientName}\n\n" +
+            "(Note: Do not deliver by address. Think about it.)\n\n" +
+            "“Oops.\nI mixed your address into a spell.All of them.”";
 
-        case MailAgency.Experiments:
-            return
-                "From: Department of Experiments\n" +
-                $"To: {recipientName}\n" +
-                "“Your house was selected for a random experiment.\nPlease do not resist.”";
+    case MailAgency.Experiments:
+        return
+            "<b>From:</b> Department of Experiments\n\n" +
+            $"<b>To:</b> {recipientName}\n\n" +
+            "(Note: Do not deliver by address. Think about it.)\n\n" +
+            "“Your house was selected for a random experiment.Please do not resist.”";
 
-        case MailAgency.HousingAuthority:
-            return
-                "From: Housing Authority\n" +
-                $"To: {recipientName}\n" +
-                "“We are optimizing living space.\nThank you for your cooperation.”";
+    case MailAgency.HousingAuthority:
+        return
+            "<b>From:</b> Housing Authority\n\n" +
+            $"<b>To:</b> {recipientName}\n\n" +
+            "(Note: Do not deliver by address. Think about it.)\n\n" +
+            "“We are optimizing living space.Thank you for your cooperation.”";
 
-        case MailAgency.Bank:
-            return
-                "From: Bank of Pigeonland\n" +
-                $"To: {recipientName}\n" +
-                "“Your accounts were reviewed.\nPlease enjoy the results.”";
+    case MailAgency.Bank:
+        return
+            "<b>From:</b> Bank of Pigeonland\n\n" +
+            $"<b>To:</b> {recipientName}\n\n" +
+            "(Note: Do not deliver by address. Think about it.)\n\n" +
+            "“Your accounts were reviewed.Please enjoy the results.”";
 
-        case MailAgency.CityRegistry:
-            return
-                "From: City Registry\n" +
-                $"To: {recipientName}\n" +
-                "“We updated our records.\nReality follows.”";
-    }
+    case MailAgency.CityRegistry:
+        return
+            "<b>From:</b> City Registry\n\n" +
+            $"<b>To:</b> {recipientName}\n\n" +
+            "(Note: Do not deliver by address. Think about it.)\n\n" +
+            "“We updated our records.Reality follows.”";
+}
+
 
     return "Email\n\nSubject\n(Unknown)\n\nFrom: ???\nTo: ???\n";
 }
