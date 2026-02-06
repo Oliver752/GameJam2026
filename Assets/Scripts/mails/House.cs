@@ -1,50 +1,62 @@
 using UnityEngine;
 using System.Collections;
 
-
 public class House : MonoBehaviour
 {
-    bool playerNear;
-    bool spinning;
+    [Header("Interaction")]
+    public float interactDistance = 3f;
+    public Transform player;
+    public Transform mailboxPoint;   // <- drag mailbox here
+
+    [Header("Effects / Prefabs")]
     public ParticleSystem confettiPrefab;
     public GameObject flowerPrefab;
     public GameObject treePrefab;
 
+    private bool spinning;
 
-    void OnTriggerEnter(Collider other)
+    private void Start()
     {
-        if (other.CompareTag("Player"))
-            playerNear = true;
+        // Auto-find player if not assigned
+        if (player == null)
+        {
+            GameObject p = GameObject.FindGameObjectWithTag("Player");
+            if (p != null)
+                player = p.transform;
+        }
+
+        if (mailboxPoint == null)
+        {
+            Debug.LogWarning($"Mailbox point is missing on {gameObject.name}!");
+        }
     }
 
-    void OnTriggerExit(Collider other)
+    private void Update()
     {
-        if (other.CompareTag("Player"))
-            playerNear = false;
-    }
+        if (player == null || mailboxPoint == null) return;
 
-    void Update()
-    {
-        Debug.Log("House Update running");
+        // Distance check from mailbox, not from house center
+        float dist = Vector3.Distance(player.position, mailboxPoint.position);
+        bool playerNear = dist <= interactDistance;
 
-        // doručenie listu
+        // Deliver logic
         if (playerNear && Input.GetKeyDown(KeyCode.F) && MailManager.Instance.HasMail())
-{
-    Debug.Log("DELIVER!");
-    React();
-    MailManager.Instance.currentMail = null;
-    UIManager.Instance.HideMail();
-}
+        {
+            Debug.Log("DELIVER!");
+            React();
 
+            MailManager.Instance.currentMail = null;
+            UIManager.Instance.HideMail();
+        }
 
-        // reality test spinning
+        // Reality test spinning
         if (spinning)
         {
             transform.Rotate(Vector3.up * 200 * Time.deltaTime);
         }
     }
 
-    void React()
+    private void React()
     {
         switch (MailManager.Instance.currentType)
         {
@@ -57,9 +69,8 @@ public class House : MonoBehaviour
                 break;
 
             case MailType.NotYours:
-    BecomeFlower();
-    break;
-
+                BecomeFlower();
+                break;
 
             case MailType.BecomeSomeone:
                 BecomeFlowerColor();
@@ -74,15 +85,13 @@ public class House : MonoBehaviour
                 break;
 
             case MailType.ChangeReality:
-    Camera.main.backgroundColor = Random.ColorHSV();
-    RenderSettings.fogColor = Random.ColorHSV();
-    break;
-
+                Camera.main.backgroundColor = Random.ColorHSV();
+                RenderSettings.fogColor = Random.ColorHSV();
+                break;
 
             case MailType.Art:
-    StartCoroutine(ArtMode());
-    break;
-
+                StartCoroutine(ArtMode());
+                break;
 
             case MailType.Replacement:
                 BecomeTree();
@@ -102,77 +111,79 @@ public class House : MonoBehaviour
         }
     }
 
-    void BecomeFlowerColor()
+    private void BecomeFlowerColor()
     {
         transform.localScale *= 0.3f;
-        GetComponent<Renderer>().material.color = Color.magenta;
+
+        Renderer r = GetComponent<Renderer>();
+        if (r != null)
+            r.material.color = Color.magenta;
     }
 
-    void BecomeFlower()
-{
-    SpawnReplacement(flowerPrefab);
-}
-
-
-
-    void FloatAway()
-{
-    Rigidbody rb = gameObject.AddComponent<Rigidbody>();
-    rb.useGravity = false;
-    rb.linearVelocity = Vector3.up * 2f;
-
-    Destroy(gameObject, 8f); // bolo 3f
-}
-
-
-    void RandomMove()
+    private void BecomeFlower()
     {
-        transform.position += new Vector3(Random.Range(-5, 5), 0, Random.Range(-5, 5));
+        SpawnReplacement(flowerPrefab);
     }
 
-    void ConfettiAndDisappear()
+    private void BecomeTree()
+    {
+        SpawnReplacement(treePrefab);
+    }
+
+    private void FloatAway()
+    {
+        Rigidbody rb = gameObject.AddComponent<Rigidbody>();
+        rb.useGravity = false;
+        rb.linearVelocity = Vector3.up * 2f;
+
+        Destroy(gameObject, 8f);
+    }
+
+    private void ConfettiAndDisappear()
     {
         gameObject.SetActive(false);
     }
 
-    void ConfettiRain()
-{
-    if (confettiPrefab == null) return;
-
-    // inštancuje presne tak, ako je prefab uložený v scéne alebo v projekte
-    ParticleSystem fx = Instantiate(confettiPrefab); 
-    fx.Play();
-    Destroy(fx.gameObject, 5f);
-}
-
-
-
-void BecomeTree()
-{
-    SpawnReplacement(treePrefab);
-}
-IEnumerator ArtMode()
-{
-    Renderer r = GetComponent<Renderer>();
-    for (int i = 0; i < 50; i++)
+    private void ConfettiRain()
     {
-        r.material.color = Random.ColorHSV();
-        transform.Rotate(0, 15, 0);
-        yield return new WaitForSeconds(0.1f);
+        if (confettiPrefab == null) return;
+
+        ParticleSystem fx = Instantiate(confettiPrefab, mailboxPoint.position, Quaternion.identity);
+        fx.Play();
+        Destroy(fx.gameObject, 5f);
     }
-}
-void SpawnReplacement(GameObject prefab)
-{
-    if (prefab == null) return;
 
-    Vector3 pos = transform.position;
-    Quaternion rot = transform.rotation;
+    private IEnumerator ArtMode()
+    {
+        Renderer r = GetComponent<Renderer>();
+        if (r == null) yield break;
 
-    Destroy(gameObject);
+        for (int i = 0; i < 50; i++)
+        {
+            r.material.color = Random.ColorHSV();
+            transform.Rotate(0, 15, 0);
+            yield return new WaitForSeconds(0.1f);
+        }
+    }
 
-    Instantiate(prefab, pos, rot);
-}
+    private void SpawnReplacement(GameObject prefab)
+    {
+        if (prefab == null) return;
 
+        Vector3 pos = transform.position;
+        Quaternion rot = transform.rotation;
 
+        Destroy(gameObject);
 
+        Instantiate(prefab, pos, rot);
+    }
+
+    // Optional: visualize interact range in editor
+    private void OnDrawGizmosSelected()
+    {
+        if (mailboxPoint == null) return;
+
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawWireSphere(mailboxPoint.position, interactDistance);
+    }
 }
