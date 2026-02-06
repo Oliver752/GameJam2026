@@ -24,10 +24,10 @@ public class UIManager : MonoBehaviour
     {
         mailPanel.SetActive(false);
     }
-    void Update()
-{
-    if (mailPanel.activeSelf && Input.GetKeyDown(KeyCode.Escape))
-        HideMail();
-}
 
+    void Update()
+    {
+        if (mailPanel.activeSelf && Input.GetKeyDown(KeyCode.Escape))
+            HideMail();
+    }
 }
