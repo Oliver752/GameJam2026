@@ -4,19 +4,20 @@ public class MailHotkeys : MonoBehaviour
 {
     void Update()
     {
-        // ✅ TAB = odložiť/vytiahnuť mail UI (mail ostáva v inventári)
+        if (MailManager.Instance == null || UIManager.Instance == null) return;
+
+        // Q = schovať / zobraziť mail (mail ostáva v inventári)
         if (Input.GetKeyDown(KeyCode.Tab))
+
         {
-            if (MailManager.Instance != null && MailManager.Instance.HasMail())
-            {
+            if (MailManager.Instance.HasMail())
                 UIManager.Instance.ToggleMail(MailManager.Instance.currentMailText);
-            }
         }
 
-        // (voliteľné) ✅ R = zahodiť mail úplne
+        // R = zahodiť mail úplne
         if (Input.GetKeyDown(KeyCode.R))
         {
-            if (MailManager.Instance != null && MailManager.Instance.HasMail())
+            if (MailManager.Instance.HasMail())
             {
                 MailManager.Instance.ClearMail();
                 UIManager.Instance.HideMail();
