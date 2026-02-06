@@ -140,6 +140,8 @@ public float trailFadeTime = 0.5f;
 
     private void Awake()
     {
+        Cursor.lockState = CursorLockMode.Locked;
+    Cursor.visible = false;
         controller = GetComponent<CharacterController>();
         
         if (modelTransform == null)
@@ -182,6 +184,11 @@ if (speedTrail != null)
 
     private void Update()
 {
+    if (Input.GetKeyDown(KeyCode.Escape))
+    {
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+    }
     HandleLook();
     
     isGrounded = CheckGrounded();
