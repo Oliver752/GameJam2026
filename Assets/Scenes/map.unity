@@ -1230,6 +1230,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -5820323842148037150, guid: 1aba325b49228444f984254f9580016e, type: 3}
       insertIndex: -1
       addedObject: {fileID: 39960912}
+    - targetCorrespondingSourceObject: {fileID: -5820323842148037150, guid: 1aba325b49228444f984254f9580016e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 39960913}
   m_SourcePrefab: {fileID: -4161369568681901532, guid: 1aba325b49228444f984254f9580016e, type: 3}
 --- !u!4 &39960910 stripped
 Transform:
@@ -1256,13 +1259,28 @@ MeshCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 5
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -159977828148198968, guid: 1aba325b49228444f984254f9580016e, type: 3}
+--- !u!114 &39960913
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 39960911}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4efcaae0128b0094b9fd2ff87c3adbe6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::House
+  confettiPrefab: {fileID: 7879206218034938203, guid: c70e229779f16154199b39dc7161f16e, type: 3}
+  flowerPrefab: {fileID: 2501598613198698422, guid: 67ea666659a5aa44cb935438dccc55bb, type: 3}
+  treePrefab: {fileID: 6022637595430182651, guid: 1538171944894f04aa63494e95cb0844, type: 3}
 --- !u!1 &47502159
 GameObject:
   m_ObjectHideFlags: 0
@@ -1312,7 +1330,6 @@ Transform:
   - {fileID: 1127852598}
   - {fileID: 702510104}
   - {fileID: 317335919}
-  - {fileID: 1551525822}
   - {fileID: 2065366208}
   - {fileID: 683445796}
   - {fileID: 1154222886}
@@ -1322,6 +1339,7 @@ Transform:
   - {fileID: 39960910}
   - {fileID: 252602041}
   - {fileID: 1432950529}
+  - {fileID: 1551525822}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &48595420
@@ -5450,15 +5468,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7575606d13b09cb4e988304838d4b0cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MailManager
-  mails:
-  - " Email  Subject Spell AccidentSpell Accident  From: The Witch To: Mary Seed
-    \u201COops. I mixed your address into a spell. All of them.\u201D "
-  - " Email  Subject Random ExperimentRandom Experiment  From: Department of Experiments
-    To: Victor Coop \u201CYour house was selected for a random experiment. Please
-    do not resist.\u201D "
-  - "Email  Subject Space OptimizationSpace Optimization  From: Housing Authority
-    To: Charles Roof \u201CWe are optimizing living space. Thank you for your cooperation.\u201D "
   currentMail: 
+  currentType: 0
 --- !u!4 &161847338
 Transform:
   m_ObjectHideFlags: 0
@@ -7071,6 +7082,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3543622026835868518, guid: b80e406766b93774fa4f06d3931246d6, type: 3}
       insertIndex: -1
       addedObject: {fileID: 229134082}
+    - targetCorrespondingSourceObject: {fileID: 3543622026835868518, guid: b80e406766b93774fa4f06d3931246d6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 229134083}
   m_SourcePrefab: {fileID: -4161369568681901532, guid: b80e406766b93774fa4f06d3931246d6, type: 3}
 --- !u!4 &229134080 stripped
 Transform:
@@ -7097,13 +7111,28 @@ MeshCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 5
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -5366804245377931033, guid: b80e406766b93774fa4f06d3931246d6, type: 3}
+--- !u!114 &229134083
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 229134081}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4efcaae0128b0094b9fd2ff87c3adbe6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::House
+  confettiPrefab: {fileID: 7879206218034938203, guid: c70e229779f16154199b39dc7161f16e, type: 3}
+  flowerPrefab: {fileID: 2501598613198698422, guid: 67ea666659a5aa44cb935438dccc55bb, type: 3}
+  treePrefab: {fileID: 6022637595430182651, guid: 1538171944894f04aa63494e95cb0844, type: 3}
 --- !u!1001 &229707541
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8885,6 +8914,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -5820323842148037150, guid: 1aba325b49228444f984254f9580016e, type: 3}
       insertIndex: -1
       addedObject: {fileID: 252602043}
+    - targetCorrespondingSourceObject: {fileID: -5820323842148037150, guid: 1aba325b49228444f984254f9580016e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 252602044}
   m_SourcePrefab: {fileID: -4161369568681901532, guid: 1aba325b49228444f984254f9580016e, type: 3}
 --- !u!4 &252602041 stripped
 Transform:
@@ -8911,13 +8943,28 @@ MeshCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 5
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -159977828148198968, guid: 1aba325b49228444f984254f9580016e, type: 3}
+--- !u!114 &252602044
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 252602042}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4efcaae0128b0094b9fd2ff87c3adbe6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::House
+  confettiPrefab: {fileID: 7879206218034938203, guid: c70e229779f16154199b39dc7161f16e, type: 3}
+  flowerPrefab: {fileID: 2501598613198698422, guid: 67ea666659a5aa44cb935438dccc55bb, type: 3}
+  treePrefab: {fileID: 6022637595430182651, guid: 1538171944894f04aa63494e95cb0844, type: 3}
 --- !u!1001 &257150737
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9821,6 +9868,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -7194666702200896029, guid: 12e0d37ace0d2cd4cb315524ecbdf404, type: 3}
       insertIndex: -1
       addedObject: {fileID: 273647214}
+    - targetCorrespondingSourceObject: {fileID: -7194666702200896029, guid: 12e0d37ace0d2cd4cb315524ecbdf404, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 273647215}
   m_SourcePrefab: {fileID: -4161369568681901532, guid: 12e0d37ace0d2cd4cb315524ecbdf404, type: 3}
 --- !u!4 &273647212 stripped
 Transform:
@@ -9847,13 +9897,28 @@ MeshCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 5
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 6897543031484464691, guid: 12e0d37ace0d2cd4cb315524ecbdf404, type: 3}
+--- !u!114 &273647215
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 273647213}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4efcaae0128b0094b9fd2ff87c3adbe6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::House
+  confettiPrefab: {fileID: 7879206218034938203, guid: c70e229779f16154199b39dc7161f16e, type: 3}
+  flowerPrefab: {fileID: 2501598613198698422, guid: 67ea666659a5aa44cb935438dccc55bb, type: 3}
+  treePrefab: {fileID: 6022637595430182651, guid: 1538171944894f04aa63494e95cb0844, type: 3}
 --- !u!1001 &280037242
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10757,6 +10822,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -7194666702200896029, guid: 12e0d37ace0d2cd4cb315524ecbdf404, type: 3}
       insertIndex: -1
       addedObject: {fileID: 317335921}
+    - targetCorrespondingSourceObject: {fileID: -7194666702200896029, guid: 12e0d37ace0d2cd4cb315524ecbdf404, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 317335922}
   m_SourcePrefab: {fileID: -4161369568681901532, guid: 12e0d37ace0d2cd4cb315524ecbdf404, type: 3}
 --- !u!4 &317335919 stripped
 Transform:
@@ -10783,13 +10851,28 @@ MeshCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 5
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 6897543031484464691, guid: 12e0d37ace0d2cd4cb315524ecbdf404, type: 3}
+--- !u!114 &317335922
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 317335920}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4efcaae0128b0094b9fd2ff87c3adbe6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::House
+  confettiPrefab: {fileID: 7879206218034938203, guid: c70e229779f16154199b39dc7161f16e, type: 3}
+  flowerPrefab: {fileID: 2501598613198698422, guid: 67ea666659a5aa44cb935438dccc55bb, type: 3}
+  treePrefab: {fileID: 6022637595430182651, guid: 1538171944894f04aa63494e95cb0844, type: 3}
 --- !u!1001 &319481643
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12142,110 +12225,11 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 8345959617387122035, guid: a7237e6fd7264984c94ab28373dffffe, type: 3}
---- !u!1001 &371810871
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 1503707623}
-    m_Modifications:
-    - target: {fileID: -6881682858943374449, guid: 3f2d0c4d041c84d4390dd7f76f0a9759, type: 3}
-      propertyPath: m_Name
-      value: flower3
-      objectReference: {fileID: 0}
-    - target: {fileID: 2472729164434034184, guid: 3f2d0c4d041c84d4390dd7f76f0a9759, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 888.79865
-      objectReference: {fileID: 0}
-    - target: {fileID: 2472729164434034184, guid: 3f2d0c4d041c84d4390dd7f76f0a9759, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 888.79865
-      objectReference: {fileID: 0}
-    - target: {fileID: 2472729164434034184, guid: 3f2d0c4d041c84d4390dd7f76f0a9759, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 888.79865
-      objectReference: {fileID: 0}
-    - target: {fileID: 2472729164434034184, guid: 3f2d0c4d041c84d4390dd7f76f0a9759, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -119.9341
-      objectReference: {fileID: 0}
-    - target: {fileID: 2472729164434034184, guid: 3f2d0c4d041c84d4390dd7f76f0a9759, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 209.75
-      objectReference: {fileID: 0}
-    - target: {fileID: 2472729164434034184, guid: 3f2d0c4d041c84d4390dd7f76f0a9759, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -807.188
-      objectReference: {fileID: 0}
-    - target: {fileID: 2472729164434034184, guid: 3f2d0c4d041c84d4390dd7f76f0a9759, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2472729164434034184, guid: 3f2d0c4d041c84d4390dd7f76f0a9759, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2472729164434034184, guid: 3f2d0c4d041c84d4390dd7f76f0a9759, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2472729164434034184, guid: 3f2d0c4d041c84d4390dd7f76f0a9759, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2472729164434034184, guid: 3f2d0c4d041c84d4390dd7f76f0a9759, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2472729164434034184, guid: 3f2d0c4d041c84d4390dd7f76f0a9759, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2472729164434034184, guid: 3f2d0c4d041c84d4390dd7f76f0a9759, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: -6881682858943374449, guid: 3f2d0c4d041c84d4390dd7f76f0a9759, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 371810874}
-  m_SourcePrefab: {fileID: -4161369568681901532, guid: 3f2d0c4d041c84d4390dd7f76f0a9759, type: 3}
 --- !u!4 &371810872 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 2472729164434034184, guid: 3f2d0c4d041c84d4390dd7f76f0a9759, type: 3}
-  m_PrefabInstance: {fileID: 371810871}
+  m_CorrespondingSourceObject: {fileID: 2348848599129825841, guid: 67ea666659a5aa44cb935438dccc55bb, type: 3}
+  m_PrefabInstance: {fileID: 5941890086534306692}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &371810873 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: -6881682858943374449, guid: 3f2d0c4d041c84d4390dd7f76f0a9759, type: 3}
-  m_PrefabInstance: {fileID: 371810871}
-  m_PrefabAsset: {fileID: 0}
---- !u!64 &371810874
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 371810873}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 7172745820539597342, guid: 3f2d0c4d041c84d4390dd7f76f0a9759, type: 3}
 --- !u!1001 &372066391
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13591,6 +13575,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -7194666702200896029, guid: 12e0d37ace0d2cd4cb315524ecbdf404, type: 3}
       insertIndex: -1
       addedObject: {fileID: 406664036}
+    - targetCorrespondingSourceObject: {fileID: -7194666702200896029, guid: 12e0d37ace0d2cd4cb315524ecbdf404, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 406664037}
   m_SourcePrefab: {fileID: -4161369568681901532, guid: 12e0d37ace0d2cd4cb315524ecbdf404, type: 3}
 --- !u!4 &406664034 stripped
 Transform:
@@ -13617,13 +13604,28 @@ MeshCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 5
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 6897543031484464691, guid: 12e0d37ace0d2cd4cb315524ecbdf404, type: 3}
+--- !u!114 &406664037
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 406664035}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4efcaae0128b0094b9fd2ff87c3adbe6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::House
+  confettiPrefab: {fileID: 7879206218034938203, guid: c70e229779f16154199b39dc7161f16e, type: 3}
+  flowerPrefab: {fileID: 2501598613198698422, guid: 67ea666659a5aa44cb935438dccc55bb, type: 3}
+  treePrefab: {fileID: 6022637595430182651, guid: 1538171944894f04aa63494e95cb0844, type: 3}
 --- !u!1001 &409678202
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14111,6 +14113,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3543622026835868518, guid: b80e406766b93774fa4f06d3931246d6, type: 3}
       insertIndex: -1
       addedObject: {fileID: 419481942}
+    - targetCorrespondingSourceObject: {fileID: 3543622026835868518, guid: b80e406766b93774fa4f06d3931246d6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 419481943}
   m_SourcePrefab: {fileID: -4161369568681901532, guid: b80e406766b93774fa4f06d3931246d6, type: 3}
 --- !u!4 &419481940 stripped
 Transform:
@@ -14137,13 +14142,28 @@ MeshCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 5
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -5366804245377931033, guid: b80e406766b93774fa4f06d3931246d6, type: 3}
+--- !u!114 &419481943
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 419481941}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4efcaae0128b0094b9fd2ff87c3adbe6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::House
+  confettiPrefab: {fileID: 7879206218034938203, guid: c70e229779f16154199b39dc7161f16e, type: 3}
+  flowerPrefab: {fileID: 2501598613198698422, guid: 67ea666659a5aa44cb935438dccc55bb, type: 3}
+  treePrefab: {fileID: 6022637595430182651, guid: 1538171944894f04aa63494e95cb0844, type: 3}
 --- !u!1 &426753631
 GameObject:
   m_ObjectHideFlags: 0
@@ -16535,6 +16555,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1663766659176777669, guid: bb8cf765685e87a459578d7395fdd217, type: 3}
       insertIndex: -1
       addedObject: {fileID: 518334100}
+    - targetCorrespondingSourceObject: {fileID: 1663766659176777669, guid: bb8cf765685e87a459578d7395fdd217, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 518334101}
   m_SourcePrefab: {fileID: -4161369568681901532, guid: bb8cf765685e87a459578d7395fdd217, type: 3}
 --- !u!4 &518334098 stripped
 Transform:
@@ -16561,13 +16584,28 @@ MeshCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 5
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 7081213412456474310, guid: bb8cf765685e87a459578d7395fdd217, type: 3}
+--- !u!114 &518334101
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 518334099}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4efcaae0128b0094b9fd2ff87c3adbe6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::House
+  confettiPrefab: {fileID: 7879206218034938203, guid: c70e229779f16154199b39dc7161f16e, type: 3}
+  flowerPrefab: {fileID: 2501598613198698422, guid: 67ea666659a5aa44cb935438dccc55bb, type: 3}
+  treePrefab: {fileID: 6022637595430182651, guid: 1538171944894f04aa63494e95cb0844, type: 3}
 --- !u!1001 &520065651
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18544,110 +18582,11 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 8345959617387122035, guid: a7237e6fd7264984c94ab28373dffffe, type: 3}
---- !u!1001 &608457020
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 2147373678}
-    m_Modifications:
-    - target: {fileID: -6873065891106745522, guid: a3237916b40054a4584e33e441e8027c, type: 3}
-      propertyPath: m_Name
-      value: tree_001 (152)
-      objectReference: {fileID: 0}
-    - target: {fileID: -4219680116344928016, guid: a3237916b40054a4584e33e441e8027c, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 44.43993
-      objectReference: {fileID: 0}
-    - target: {fileID: -4219680116344928016, guid: a3237916b40054a4584e33e441e8027c, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 44.43993
-      objectReference: {fileID: 0}
-    - target: {fileID: -4219680116344928016, guid: a3237916b40054a4584e33e441e8027c, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 44.43993
-      objectReference: {fileID: 0}
-    - target: {fileID: -4219680116344928016, guid: a3237916b40054a4584e33e441e8027c, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -2656.4053
-      objectReference: {fileID: 0}
-    - target: {fileID: -4219680116344928016, guid: a3237916b40054a4584e33e441e8027c, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 76.26221
-      objectReference: {fileID: 0}
-    - target: {fileID: -4219680116344928016, guid: a3237916b40054a4584e33e441e8027c, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -815
-      objectReference: {fileID: 0}
-    - target: {fileID: -4219680116344928016, guid: a3237916b40054a4584e33e441e8027c, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -4219680116344928016, guid: a3237916b40054a4584e33e441e8027c, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4219680116344928016, guid: a3237916b40054a4584e33e441e8027c, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4219680116344928016, guid: a3237916b40054a4584e33e441e8027c, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4219680116344928016, guid: a3237916b40054a4584e33e441e8027c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4219680116344928016, guid: a3237916b40054a4584e33e441e8027c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4219680116344928016, guid: a3237916b40054a4584e33e441e8027c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: -6873065891106745522, guid: a3237916b40054a4584e33e441e8027c, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 608457023}
-  m_SourcePrefab: {fileID: -4161369568681901532, guid: a3237916b40054a4584e33e441e8027c, type: 3}
 --- !u!4 &608457021 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: -4219680116344928016, guid: a3237916b40054a4584e33e441e8027c, type: 3}
-  m_PrefabInstance: {fileID: 608457020}
+  m_CorrespondingSourceObject: {fileID: 3925429465655969093, guid: 1538171944894f04aa63494e95cb0844, type: 3}
+  m_PrefabInstance: {fileID: 7608897997411713166}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &608457022 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: -6873065891106745522, guid: a3237916b40054a4584e33e441e8027c, type: 3}
-  m_PrefabInstance: {fileID: 608457020}
-  m_PrefabAsset: {fileID: 0}
---- !u!64 &608457023
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 608457022}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4221278372373114116, guid: a3237916b40054a4584e33e441e8027c, type: 3}
 --- !u!1001 &608986613
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19759,6 +19698,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1663766659176777669, guid: bb8cf765685e87a459578d7395fdd217, type: 3}
       insertIndex: -1
       addedObject: {fileID: 626648649}
+    - targetCorrespondingSourceObject: {fileID: 1663766659176777669, guid: bb8cf765685e87a459578d7395fdd217, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 626648650}
   m_SourcePrefab: {fileID: -4161369568681901532, guid: bb8cf765685e87a459578d7395fdd217, type: 3}
 --- !u!4 &626648647 stripped
 Transform:
@@ -19785,13 +19727,28 @@ MeshCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 5
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 7081213412456474310, guid: bb8cf765685e87a459578d7395fdd217, type: 3}
+--- !u!114 &626648650
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 626648648}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4efcaae0128b0094b9fd2ff87c3adbe6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::House
+  confettiPrefab: {fileID: 7879206218034938203, guid: c70e229779f16154199b39dc7161f16e, type: 3}
+  flowerPrefab: {fileID: 2501598613198698422, guid: 67ea666659a5aa44cb935438dccc55bb, type: 3}
+  treePrefab: {fileID: 6022637595430182651, guid: 1538171944894f04aa63494e95cb0844, type: 3}
 --- !u!1 &628711293
 GameObject:
   m_ObjectHideFlags: 0
@@ -21664,6 +21621,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 83349215e21a96e4c9f6b0f3f7392e27, type: 3}
       insertIndex: -1
       addedObject: {fileID: 683445798}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 83349215e21a96e4c9f6b0f3f7392e27, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 683445799}
   m_SourcePrefab: {fileID: 100100000, guid: 83349215e21a96e4c9f6b0f3f7392e27, type: 3}
 --- !u!4 &683445796 stripped
 Transform:
@@ -21690,13 +21650,28 @@ MeshCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 5
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 2606347287173655772, guid: 83349215e21a96e4c9f6b0f3f7392e27, type: 3}
+--- !u!114 &683445799
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 683445797}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4efcaae0128b0094b9fd2ff87c3adbe6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::House
+  confettiPrefab: {fileID: 7879206218034938203, guid: c70e229779f16154199b39dc7161f16e, type: 3}
+  flowerPrefab: {fileID: 2501598613198698422, guid: 67ea666659a5aa44cb935438dccc55bb, type: 3}
+  treePrefab: {fileID: 6022637595430182651, guid: 1538171944894f04aa63494e95cb0844, type: 3}
 --- !u!1001 &683839681
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22808,6 +22783,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -7194666702200896029, guid: 12e0d37ace0d2cd4cb315524ecbdf404, type: 3}
       insertIndex: -1
       addedObject: {fileID: 702510106}
+    - targetCorrespondingSourceObject: {fileID: -7194666702200896029, guid: 12e0d37ace0d2cd4cb315524ecbdf404, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 702510107}
   m_SourcePrefab: {fileID: -4161369568681901532, guid: 12e0d37ace0d2cd4cb315524ecbdf404, type: 3}
 --- !u!4 &702510104 stripped
 Transform:
@@ -22834,13 +22812,28 @@ MeshCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 5
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 6897543031484464691, guid: 12e0d37ace0d2cd4cb315524ecbdf404, type: 3}
+--- !u!114 &702510107
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 702510105}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4efcaae0128b0094b9fd2ff87c3adbe6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::House
+  confettiPrefab: {fileID: 7879206218034938203, guid: c70e229779f16154199b39dc7161f16e, type: 3}
+  flowerPrefab: {fileID: 2501598613198698422, guid: 67ea666659a5aa44cb935438dccc55bb, type: 3}
+  treePrefab: {fileID: 6022637595430182651, guid: 1538171944894f04aa63494e95cb0844, type: 3}
 --- !u!1001 &706870077
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25304,6 +25297,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -7194666702200896029, guid: 12e0d37ace0d2cd4cb315524ecbdf404, type: 3}
       insertIndex: -1
       addedObject: {fileID: 774084985}
+    - targetCorrespondingSourceObject: {fileID: -7194666702200896029, guid: 12e0d37ace0d2cd4cb315524ecbdf404, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 774084986}
   m_SourcePrefab: {fileID: -4161369568681901532, guid: 12e0d37ace0d2cd4cb315524ecbdf404, type: 3}
 --- !u!4 &774084983 stripped
 Transform:
@@ -25330,13 +25326,28 @@ MeshCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 5
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 6897543031484464691, guid: 12e0d37ace0d2cd4cb315524ecbdf404, type: 3}
+--- !u!114 &774084986
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 774084984}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4efcaae0128b0094b9fd2ff87c3adbe6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::House
+  confettiPrefab: {fileID: 7879206218034938203, guid: c70e229779f16154199b39dc7161f16e, type: 3}
+  flowerPrefab: {fileID: 2501598613198698422, guid: 67ea666659a5aa44cb935438dccc55bb, type: 3}
+  treePrefab: {fileID: 6022637595430182651, guid: 1538171944894f04aa63494e95cb0844, type: 3}
 --- !u!1001 &775555233
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -28747,6 +28758,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1663766659176777669, guid: bb8cf765685e87a459578d7395fdd217, type: 3}
       insertIndex: -1
       addedObject: {fileID: 857988168}
+    - targetCorrespondingSourceObject: {fileID: 1663766659176777669, guid: bb8cf765685e87a459578d7395fdd217, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 857988169}
   m_SourcePrefab: {fileID: -4161369568681901532, guid: bb8cf765685e87a459578d7395fdd217, type: 3}
 --- !u!4 &857988166 stripped
 Transform:
@@ -28773,13 +28787,28 @@ MeshCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 5
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 7081213412456474310, guid: bb8cf765685e87a459578d7395fdd217, type: 3}
+--- !u!114 &857988169
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 857988167}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4efcaae0128b0094b9fd2ff87c3adbe6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::House
+  confettiPrefab: {fileID: 7879206218034938203, guid: c70e229779f16154199b39dc7161f16e, type: 3}
+  flowerPrefab: {fileID: 2501598613198698422, guid: 67ea666659a5aa44cb935438dccc55bb, type: 3}
+  treePrefab: {fileID: 6022637595430182651, guid: 1538171944894f04aa63494e95cb0844, type: 3}
 --- !u!1001 &858793184
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -31381,6 +31410,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3543622026835868518, guid: b80e406766b93774fa4f06d3931246d6, type: 3}
       insertIndex: -1
       addedObject: {fileID: 936903689}
+    - targetCorrespondingSourceObject: {fileID: 3543622026835868518, guid: b80e406766b93774fa4f06d3931246d6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 936903690}
   m_SourcePrefab: {fileID: -4161369568681901532, guid: b80e406766b93774fa4f06d3931246d6, type: 3}
 --- !u!4 &936903687 stripped
 Transform:
@@ -31407,13 +31439,28 @@ MeshCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 5
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -5366804245377931033, guid: b80e406766b93774fa4f06d3931246d6, type: 3}
+--- !u!114 &936903690
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 936903688}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4efcaae0128b0094b9fd2ff87c3adbe6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::House
+  confettiPrefab: {fileID: 7879206218034938203, guid: c70e229779f16154199b39dc7161f16e, type: 3}
+  flowerPrefab: {fileID: 2501598613198698422, guid: 67ea666659a5aa44cb935438dccc55bb, type: 3}
+  treePrefab: {fileID: 6022637595430182651, guid: 1538171944894f04aa63494e95cb0844, type: 3}
 --- !u!1 &940787113
 GameObject:
   m_ObjectHideFlags: 0
@@ -36402,6 +36449,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -7194666702200896029, guid: 12e0d37ace0d2cd4cb315524ecbdf404, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1127852600}
+    - targetCorrespondingSourceObject: {fileID: -7194666702200896029, guid: 12e0d37ace0d2cd4cb315524ecbdf404, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1127852601}
   m_SourcePrefab: {fileID: -4161369568681901532, guid: 12e0d37ace0d2cd4cb315524ecbdf404, type: 3}
 --- !u!4 &1127852598 stripped
 Transform:
@@ -36428,13 +36478,28 @@ MeshCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 5
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 6897543031484464691, guid: 12e0d37ace0d2cd4cb315524ecbdf404, type: 3}
+--- !u!114 &1127852601
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1127852599}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4efcaae0128b0094b9fd2ff87c3adbe6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::House
+  confettiPrefab: {fileID: 7879206218034938203, guid: c70e229779f16154199b39dc7161f16e, type: 3}
+  flowerPrefab: {fileID: 2501598613198698422, guid: 67ea666659a5aa44cb935438dccc55bb, type: 3}
+  treePrefab: {fileID: 6022637595430182651, guid: 1538171944894f04aa63494e95cb0844, type: 3}
 --- !u!1001 &1130030751
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -37065,6 +37130,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 83349215e21a96e4c9f6b0f3f7392e27, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1154222888}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 83349215e21a96e4c9f6b0f3f7392e27, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1154222889}
   m_SourcePrefab: {fileID: 100100000, guid: 83349215e21a96e4c9f6b0f3f7392e27, type: 3}
 --- !u!4 &1154222886 stripped
 Transform:
@@ -37091,13 +37159,28 @@ MeshCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 5
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 2606347287173655772, guid: 83349215e21a96e4c9f6b0f3f7392e27, type: 3}
+--- !u!114 &1154222889
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1154222887}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4efcaae0128b0094b9fd2ff87c3adbe6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::House
+  confettiPrefab: {fileID: 7879206218034938203, guid: c70e229779f16154199b39dc7161f16e, type: 3}
+  flowerPrefab: {fileID: 2501598613198698422, guid: 67ea666659a5aa44cb935438dccc55bb, type: 3}
+  treePrefab: {fileID: 1154222887}
 --- !u!1001 &1155854370
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -37828,8 +37911,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4efcaae0128b0094b9fd2ff87c3adbe6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::House
-  reactions:
-  - REALITY ERROR
+  confettiPrefab: {fileID: 0}
+  flowerPrefab: {fileID: 0}
+  treePrefab: {fileID: 0}
 --- !u!1001 &1171294116
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -41016,6 +41100,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1663766659176777669, guid: bb8cf765685e87a459578d7395fdd217, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1266098989}
+    - targetCorrespondingSourceObject: {fileID: 1663766659176777669, guid: bb8cf765685e87a459578d7395fdd217, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1266098990}
   m_SourcePrefab: {fileID: -4161369568681901532, guid: bb8cf765685e87a459578d7395fdd217, type: 3}
 --- !u!4 &1266098987 stripped
 Transform:
@@ -41042,13 +41129,28 @@ MeshCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 5
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 7081213412456474310, guid: bb8cf765685e87a459578d7395fdd217, type: 3}
+--- !u!114 &1266098990
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1266098988}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4efcaae0128b0094b9fd2ff87c3adbe6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::House
+  confettiPrefab: {fileID: 7879206218034938203, guid: c70e229779f16154199b39dc7161f16e, type: 3}
+  flowerPrefab: {fileID: 2501598613198698422, guid: 67ea666659a5aa44cb935438dccc55bb, type: 3}
+  treePrefab: {fileID: 6022637595430182651, guid: 1538171944894f04aa63494e95cb0844, type: 3}
 --- !u!1001 &1270916039
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -43916,6 +44018,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 83349215e21a96e4c9f6b0f3f7392e27, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1355006881}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 83349215e21a96e4c9f6b0f3f7392e27, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1355006882}
   m_SourcePrefab: {fileID: 100100000, guid: 83349215e21a96e4c9f6b0f3f7392e27, type: 3}
 --- !u!4 &1355006879 stripped
 Transform:
@@ -43942,13 +44047,28 @@ MeshCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 5
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 2606347287173655772, guid: 83349215e21a96e4c9f6b0f3f7392e27, type: 3}
+--- !u!114 &1355006882
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1355006880}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4efcaae0128b0094b9fd2ff87c3adbe6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::House
+  confettiPrefab: {fileID: 7879206218034938203, guid: c70e229779f16154199b39dc7161f16e, type: 3}
+  flowerPrefab: {fileID: 2501598613198698422, guid: 67ea666659a5aa44cb935438dccc55bb, type: 3}
+  treePrefab: {fileID: 6022637595430182651, guid: 1538171944894f04aa63494e95cb0844, type: 3}
 --- !u!1001 &1355737029
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -47403,6 +47523,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -5820323842148037150, guid: 1aba325b49228444f984254f9580016e, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1432950531}
+    - targetCorrespondingSourceObject: {fileID: -5820323842148037150, guid: 1aba325b49228444f984254f9580016e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1432950532}
   m_SourcePrefab: {fileID: -4161369568681901532, guid: 1aba325b49228444f984254f9580016e, type: 3}
 --- !u!4 &1432950529 stripped
 Transform:
@@ -47429,13 +47552,28 @@ MeshCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 5
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -159977828148198968, guid: 1aba325b49228444f984254f9580016e, type: 3}
+--- !u!114 &1432950532
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1432950530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4efcaae0128b0094b9fd2ff87c3adbe6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::House
+  confettiPrefab: {fileID: 7879206218034938203, guid: c70e229779f16154199b39dc7161f16e, type: 3}
+  flowerPrefab: {fileID: 2501598613198698422, guid: 67ea666659a5aa44cb935438dccc55bb, type: 3}
+  treePrefab: {fileID: 6022637595430182651, guid: 1538171944894f04aa63494e95cb0844, type: 3}
 --- !u!1001 &1438058802
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -48555,6 +48693,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -7194666702200896029, guid: 12e0d37ace0d2cd4cb315524ecbdf404, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1451690506}
+    - targetCorrespondingSourceObject: {fileID: -7194666702200896029, guid: 12e0d37ace0d2cd4cb315524ecbdf404, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1451690507}
   m_SourcePrefab: {fileID: -4161369568681901532, guid: 12e0d37ace0d2cd4cb315524ecbdf404, type: 3}
 --- !u!4 &1451690504 stripped
 Transform:
@@ -48581,13 +48722,28 @@ MeshCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 5
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 6897543031484464691, guid: 12e0d37ace0d2cd4cb315524ecbdf404, type: 3}
+--- !u!114 &1451690507
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1451690505}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4efcaae0128b0094b9fd2ff87c3adbe6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::House
+  confettiPrefab: {fileID: 7879206218034938203, guid: c70e229779f16154199b39dc7161f16e, type: 3}
+  flowerPrefab: {fileID: 2501598613198698422, guid: 67ea666659a5aa44cb935438dccc55bb, type: 3}
+  treePrefab: {fileID: 6022637595430182651, guid: 1538171944894f04aa63494e95cb0844, type: 3}
 --- !u!1001 &1459006156
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -50921,6 +51077,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 83349215e21a96e4c9f6b0f3f7392e27, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1538664273}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 83349215e21a96e4c9f6b0f3f7392e27, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1538664274}
   m_SourcePrefab: {fileID: 100100000, guid: 83349215e21a96e4c9f6b0f3f7392e27, type: 3}
 --- !u!4 &1538664271 stripped
 Transform:
@@ -50947,13 +51106,28 @@ MeshCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 5
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 2606347287173655772, guid: 83349215e21a96e4c9f6b0f3f7392e27, type: 3}
+--- !u!114 &1538664274
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1538664272}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4efcaae0128b0094b9fd2ff87c3adbe6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::House
+  confettiPrefab: {fileID: 7879206218034938203, guid: c70e229779f16154199b39dc7161f16e, type: 3}
+  flowerPrefab: {fileID: 2501598613198698422, guid: 67ea666659a5aa44cb935438dccc55bb, type: 3}
+  treePrefab: {fileID: 6022637595430182651, guid: 1538171944894f04aa63494e95cb0844, type: 3}
 --- !u!1001 &1540838176
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -51176,15 +51350,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -573863051163379899, guid: 12e0d37ace0d2cd4cb315524ecbdf404, type: 3}
       propertyPath: m_LocalScale.x
-      value: 44.43993
+      value: 44.439926
       objectReference: {fileID: 0}
     - target: {fileID: -573863051163379899, guid: 12e0d37ace0d2cd4cb315524ecbdf404, type: 3}
       propertyPath: m_LocalScale.y
-      value: 44.43993
+      value: 44.439926
       objectReference: {fileID: 0}
     - target: {fileID: -573863051163379899, guid: 12e0d37ace0d2cd4cb315524ecbdf404, type: 3}
       propertyPath: m_LocalScale.z
-      value: 44.43993
+      value: 44.439926
       objectReference: {fileID: 0}
     - target: {fileID: -573863051163379899, guid: 12e0d37ace0d2cd4cb315524ecbdf404, type: 3}
       propertyPath: m_LocalPosition.x
@@ -51192,11 +51366,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -573863051163379899, guid: 12e0d37ace0d2cd4cb315524ecbdf404, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 111.401215
+      value: 111.40121
       objectReference: {fileID: 0}
     - target: {fileID: -573863051163379899, guid: 12e0d37ace0d2cd4cb315524ecbdf404, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 273.87878
+      value: 273.87848
       objectReference: {fileID: 0}
     - target: {fileID: -573863051163379899, guid: 12e0d37ace0d2cd4cb315524ecbdf404, type: 3}
       propertyPath: m_LocalRotation.w
@@ -51204,7 +51378,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -573863051163379899, guid: 12e0d37ace0d2cd4cb315524ecbdf404, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -573863051163379899, guid: 12e0d37ace0d2cd4cb315524ecbdf404, type: 3}
       propertyPath: m_LocalRotation.y
@@ -51212,7 +51386,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -573863051163379899, guid: 12e0d37ace0d2cd4cb315524ecbdf404, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -573863051163379899, guid: 12e0d37ace0d2cd4cb315524ecbdf404, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -51233,6 +51407,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -7194666702200896029, guid: 12e0d37ace0d2cd4cb315524ecbdf404, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1551525824}
+    - targetCorrespondingSourceObject: {fileID: -7194666702200896029, guid: 12e0d37ace0d2cd4cb315524ecbdf404, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1551525825}
   m_SourcePrefab: {fileID: -4161369568681901532, guid: 12e0d37ace0d2cd4cb315524ecbdf404, type: 3}
 --- !u!4 &1551525822 stripped
 Transform:
@@ -51259,13 +51436,28 @@ MeshCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 5
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 6897543031484464691, guid: 12e0d37ace0d2cd4cb315524ecbdf404, type: 3}
+--- !u!114 &1551525825
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1551525823}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4efcaae0128b0094b9fd2ff87c3adbe6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::House
+  confettiPrefab: {fileID: 7879206218034938203, guid: c70e229779f16154199b39dc7161f16e, type: 3}
+  flowerPrefab: {fileID: 2501598613198698422, guid: 67ea666659a5aa44cb935438dccc55bb, type: 3}
+  treePrefab: {fileID: 6022637595430182651, guid: 1538171944894f04aa63494e95cb0844, type: 3}
 --- !u!1001 &1553768551
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -54564,8 +54756,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4efcaae0128b0094b9fd2ff87c3adbe6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::House
-  reactions:
-  - BOOOOOM
+  confettiPrefab: {fileID: 0}
+  flowerPrefab: {fileID: 0}
+  treePrefab: {fileID: 0}
 --- !u!1001 &1644635465
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -55365,6 +55558,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3543622026835868518, guid: b80e406766b93774fa4f06d3931246d6, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1666455855}
+    - targetCorrespondingSourceObject: {fileID: 3543622026835868518, guid: b80e406766b93774fa4f06d3931246d6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1666455856}
   m_SourcePrefab: {fileID: -4161369568681901532, guid: b80e406766b93774fa4f06d3931246d6, type: 3}
 --- !u!4 &1666455853 stripped
 Transform:
@@ -55391,13 +55587,28 @@ MeshCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 5
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -5366804245377931033, guid: b80e406766b93774fa4f06d3931246d6, type: 3}
+--- !u!114 &1666455856
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1666455854}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4efcaae0128b0094b9fd2ff87c3adbe6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::House
+  confettiPrefab: {fileID: 7879206218034938203, guid: c70e229779f16154199b39dc7161f16e, type: 3}
+  flowerPrefab: {fileID: 2501598613198698422, guid: 67ea666659a5aa44cb935438dccc55bb, type: 3}
+  treePrefab: {fileID: 6022637595430182651, guid: 1538171944894f04aa63494e95cb0844, type: 3}
 --- !u!1001 &1683200166
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -55677,6 +55888,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3543622026835868518, guid: b80e406766b93774fa4f06d3931246d6, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1688900585}
+    - targetCorrespondingSourceObject: {fileID: 3543622026835868518, guid: b80e406766b93774fa4f06d3931246d6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1688900586}
   m_SourcePrefab: {fileID: -4161369568681901532, guid: b80e406766b93774fa4f06d3931246d6, type: 3}
 --- !u!4 &1688900583 stripped
 Transform:
@@ -55703,13 +55917,28 @@ MeshCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 5
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -5366804245377931033, guid: b80e406766b93774fa4f06d3931246d6, type: 3}
+--- !u!114 &1688900586
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1688900584}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4efcaae0128b0094b9fd2ff87c3adbe6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::House
+  confettiPrefab: {fileID: 7879206218034938203, guid: c70e229779f16154199b39dc7161f16e, type: 3}
+  flowerPrefab: {fileID: 2501598613198698422, guid: 67ea666659a5aa44cb935438dccc55bb, type: 3}
+  treePrefab: {fileID: 6022637595430182651, guid: 1538171944894f04aa63494e95cb0844, type: 3}
 --- !u!1001 &1692398930
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -55989,6 +56218,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -7194666702200896029, guid: 12e0d37ace0d2cd4cb315524ecbdf404, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1694467466}
+    - targetCorrespondingSourceObject: {fileID: -7194666702200896029, guid: 12e0d37ace0d2cd4cb315524ecbdf404, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1694467467}
   m_SourcePrefab: {fileID: -4161369568681901532, guid: 12e0d37ace0d2cd4cb315524ecbdf404, type: 3}
 --- !u!4 &1694467464 stripped
 Transform:
@@ -56015,13 +56247,28 @@ MeshCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 5
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 6897543031484464691, guid: 12e0d37ace0d2cd4cb315524ecbdf404, type: 3}
+--- !u!114 &1694467467
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1694467465}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4efcaae0128b0094b9fd2ff87c3adbe6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::House
+  confettiPrefab: {fileID: 7879206218034938203, guid: c70e229779f16154199b39dc7161f16e, type: 3}
+  flowerPrefab: {fileID: 2501598613198698422, guid: 67ea666659a5aa44cb935438dccc55bb, type: 3}
+  treePrefab: {fileID: 6022637595430182651, guid: 1538171944894f04aa63494e95cb0844, type: 3}
 --- !u!1001 &1696365835
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -62275,6 +62522,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1663766659176777669, guid: bb8cf765685e87a459578d7395fdd217, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1906105911}
+    - targetCorrespondingSourceObject: {fileID: 1663766659176777669, guid: bb8cf765685e87a459578d7395fdd217, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1906105912}
   m_SourcePrefab: {fileID: -4161369568681901532, guid: bb8cf765685e87a459578d7395fdd217, type: 3}
 --- !u!4 &1906105909 stripped
 Transform:
@@ -62301,13 +62551,28 @@ MeshCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 5
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 7081213412456474310, guid: bb8cf765685e87a459578d7395fdd217, type: 3}
+--- !u!114 &1906105912
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1906105910}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4efcaae0128b0094b9fd2ff87c3adbe6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::House
+  confettiPrefab: {fileID: 7879206218034938203, guid: c70e229779f16154199b39dc7161f16e, type: 3}
+  flowerPrefab: {fileID: 2501598613198698422, guid: 67ea666659a5aa44cb935438dccc55bb, type: 3}
+  treePrefab: {fileID: 6022637595430182651, guid: 1538171944894f04aa63494e95cb0844, type: 3}
 --- !u!1001 &1910347758
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -63543,6 +63808,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1663766659176777669, guid: bb8cf765685e87a459578d7395fdd217, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1950290017}
+    - targetCorrespondingSourceObject: {fileID: 1663766659176777669, guid: bb8cf765685e87a459578d7395fdd217, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1950290018}
   m_SourcePrefab: {fileID: -4161369568681901532, guid: bb8cf765685e87a459578d7395fdd217, type: 3}
 --- !u!4 &1950290015 stripped
 Transform:
@@ -63569,13 +63837,28 @@ MeshCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 5
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 7081213412456474310, guid: bb8cf765685e87a459578d7395fdd217, type: 3}
+--- !u!114 &1950290018
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1950290016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4efcaae0128b0094b9fd2ff87c3adbe6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::House
+  confettiPrefab: {fileID: 7879206218034938203, guid: c70e229779f16154199b39dc7161f16e, type: 3}
+  flowerPrefab: {fileID: 2501598613198698422, guid: 67ea666659a5aa44cb935438dccc55bb, type: 3}
+  treePrefab: {fileID: 6022637595430182651, guid: 1538171944894f04aa63494e95cb0844, type: 3}
 --- !u!1001 &1953583298
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -64375,6 +64658,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3543622026835868518, guid: b80e406766b93774fa4f06d3931246d6, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1969487407}
+    - targetCorrespondingSourceObject: {fileID: 3543622026835868518, guid: b80e406766b93774fa4f06d3931246d6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1969487408}
   m_SourcePrefab: {fileID: -4161369568681901532, guid: b80e406766b93774fa4f06d3931246d6, type: 3}
 --- !u!4 &1969487405 stripped
 Transform:
@@ -64401,13 +64687,28 @@ MeshCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 5
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -5366804245377931033, guid: b80e406766b93774fa4f06d3931246d6, type: 3}
+--- !u!114 &1969487408
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1969487406}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4efcaae0128b0094b9fd2ff87c3adbe6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::House
+  confettiPrefab: {fileID: 7879206218034938203, guid: c70e229779f16154199b39dc7161f16e, type: 3}
+  flowerPrefab: {fileID: 2501598613198698422, guid: 67ea666659a5aa44cb935438dccc55bb, type: 3}
+  treePrefab: {fileID: 6022637595430182651, guid: 1538171944894f04aa63494e95cb0844, type: 3}
 --- !u!1001 &1976711925
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -67037,6 +67338,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 83349215e21a96e4c9f6b0f3f7392e27, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2065366210}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 83349215e21a96e4c9f6b0f3f7392e27, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2065366211}
   m_SourcePrefab: {fileID: 100100000, guid: 83349215e21a96e4c9f6b0f3f7392e27, type: 3}
 --- !u!4 &2065366208 stripped
 Transform:
@@ -67063,13 +67367,28 @@ MeshCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 5
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 2606347287173655772, guid: 83349215e21a96e4c9f6b0f3f7392e27, type: 3}
+--- !u!114 &2065366211
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2065366209}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4efcaae0128b0094b9fd2ff87c3adbe6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::House
+  confettiPrefab: {fileID: 7879206218034938203, guid: c70e229779f16154199b39dc7161f16e, type: 3}
+  flowerPrefab: {fileID: 2501598613198698422, guid: 67ea666659a5aa44cb935438dccc55bb, type: 3}
+  treePrefab: {fileID: 6022637595430182651, guid: 1538171944894f04aa63494e95cb0844, type: 3}
 --- !u!1001 &2067029924
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -69924,6 +70243,185 @@ Transform:
   - {fileID: 2124946146}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &5941890086534306692
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1503707623}
+    m_Modifications:
+    - target: {fileID: 2348848599129825841, guid: 67ea666659a5aa44cb935438dccc55bb, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -119.9341
+      objectReference: {fileID: 0}
+    - target: {fileID: 2348848599129825841, guid: 67ea666659a5aa44cb935438dccc55bb, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 209.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 2348848599129825841, guid: 67ea666659a5aa44cb935438dccc55bb, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -807.188
+      objectReference: {fileID: 0}
+    - target: {fileID: 2348848599129825841, guid: 67ea666659a5aa44cb935438dccc55bb, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2348848599129825841, guid: 67ea666659a5aa44cb935438dccc55bb, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2348848599129825841, guid: 67ea666659a5aa44cb935438dccc55bb, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2348848599129825841, guid: 67ea666659a5aa44cb935438dccc55bb, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2348848599129825841, guid: 67ea666659a5aa44cb935438dccc55bb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2348848599129825841, guid: 67ea666659a5aa44cb935438dccc55bb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2348848599129825841, guid: 67ea666659a5aa44cb935438dccc55bb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2501598613198698422, guid: 67ea666659a5aa44cb935438dccc55bb, type: 3}
+      propertyPath: m_Name
+      value: flower3
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 67ea666659a5aa44cb935438dccc55bb, type: 3}
+--- !u!1001 &7473633590220230560
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 513809536310267449, guid: c70e229779f16154199b39dc7161f16e, type: 3}
+      propertyPath: m_Name
+      value: Particle System
+      objectReference: {fileID: 0}
+    - target: {fileID: 513809536310267449, guid: c70e229779f16154199b39dc7161f16e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6298036926623377012, guid: c70e229779f16154199b39dc7161f16e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -533.1949
+      objectReference: {fileID: 0}
+    - target: {fileID: 6298036926623377012, guid: c70e229779f16154199b39dc7161f16e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 202
+      objectReference: {fileID: 0}
+    - target: {fileID: 6298036926623377012, guid: c70e229779f16154199b39dc7161f16e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -3768
+      objectReference: {fileID: 0}
+    - target: {fileID: 6298036926623377012, guid: c70e229779f16154199b39dc7161f16e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 6298036926623377012, guid: c70e229779f16154199b39dc7161f16e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 6298036926623377012, guid: c70e229779f16154199b39dc7161f16e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6298036926623377012, guid: c70e229779f16154199b39dc7161f16e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6298036926623377012, guid: c70e229779f16154199b39dc7161f16e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 6298036926623377012, guid: c70e229779f16154199b39dc7161f16e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6298036926623377012, guid: c70e229779f16154199b39dc7161f16e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7879206218034938203, guid: c70e229779f16154199b39dc7161f16e, type: 3}
+      propertyPath: looping
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c70e229779f16154199b39dc7161f16e, type: 3}
+--- !u!1001 &7608897997411713166
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2147373678}
+    m_Modifications:
+    - target: {fileID: 3925429465655969093, guid: 1538171944894f04aa63494e95cb0844, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2656.4053
+      objectReference: {fileID: 0}
+    - target: {fileID: 3925429465655969093, guid: 1538171944894f04aa63494e95cb0844, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 76.26221
+      objectReference: {fileID: 0}
+    - target: {fileID: 3925429465655969093, guid: 1538171944894f04aa63494e95cb0844, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -815
+      objectReference: {fileID: 0}
+    - target: {fileID: 3925429465655969093, guid: 1538171944894f04aa63494e95cb0844, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3925429465655969093, guid: 1538171944894f04aa63494e95cb0844, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3925429465655969093, guid: 1538171944894f04aa63494e95cb0844, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3925429465655969093, guid: 1538171944894f04aa63494e95cb0844, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3925429465655969093, guid: 1538171944894f04aa63494e95cb0844, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3925429465655969093, guid: 1538171944894f04aa63494e95cb0844, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3925429465655969093, guid: 1538171944894f04aa63494e95cb0844, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6022637595430182651, guid: 1538171944894f04aa63494e95cb0844, type: 3}
+      propertyPath: m_Name
+      value: tree_001 (152)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1538171944894f04aa63494e95cb0844, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -69944,4 +70442,5 @@ SceneRoots:
   - {fileID: 161847338}
   - {fileID: 1210231150}
   - {fileID: 247195994}
+  - {fileID: 7473633590220230560}
   - {fileID: 1835828795}

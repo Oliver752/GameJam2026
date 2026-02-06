@@ -1,10 +1,14 @@
 using UnityEngine;
+using System.Collections;
+
 
 public class House : MonoBehaviour
 {
     bool playerNear;
     bool spinning;
     public ParticleSystem confettiPrefab;
+    public GameObject flowerPrefab;
+    public GameObject treePrefab;
 
 
     void OnTriggerEnter(Collider other)
@@ -53,11 +57,12 @@ public class House : MonoBehaviour
                 break;
 
             case MailType.NotYours:
-                transform.Rotate(0, 180, 0);
-                break;
+    BecomeFlower();
+    break;
+
 
             case MailType.BecomeSomeone:
-                BecomeFlower();
+                BecomeFlowerColor();
                 break;
 
             case MailType.Experiment:
@@ -75,11 +80,12 @@ public class House : MonoBehaviour
 
 
             case MailType.Art:
-                GetComponent<Renderer>().material.SetFloat("_Glossiness", 1f);
-                break;
+    StartCoroutine(ArtMode());
+    break;
+
 
             case MailType.Replacement:
-                RandomMove();
+                BecomeTree();
                 break;
 
             case MailType.Shrink:
@@ -96,19 +102,28 @@ public class House : MonoBehaviour
         }
     }
 
-    void BecomeFlower()
+    void BecomeFlowerColor()
     {
         transform.localScale *= 0.3f;
         GetComponent<Renderer>().material.color = Color.magenta;
     }
 
+    void BecomeFlower()
+{
+    SpawnReplacement(flowerPrefab);
+}
+
+
+
     void FloatAway()
-    {
-        Rigidbody rb = gameObject.AddComponent<Rigidbody>();
-        rb.useGravity = false;
-        rb.linearVelocity = Vector3.up * 5f;
-        Destroy(gameObject, 3f);
-    }
+{
+    Rigidbody rb = gameObject.AddComponent<Rigidbody>();
+    rb.useGravity = false;
+    rb.linearVelocity = Vector3.up * 2f;
+
+    Destroy(gameObject, 8f); // bolo 3f
+}
+
 
     void RandomMove()
     {
@@ -122,9 +137,42 @@ public class House : MonoBehaviour
 
     void ConfettiRain()
 {
-    ParticleSystem fx = Instantiate(confettiPrefab, transform.position + Vector3.up * 3f, Quaternion.identity);
+    if (confettiPrefab == null) return;
+
+    // inštancuje presne tak, ako je prefab uložený v scéne alebo v projekte
+    ParticleSystem fx = Instantiate(confettiPrefab); 
     fx.Play();
-    Destroy(fx.gameObject, 3f);
+    Destroy(fx.gameObject, 5f);
 }
+
+
+
+void BecomeTree()
+{
+    SpawnReplacement(treePrefab);
+}
+IEnumerator ArtMode()
+{
+    Renderer r = GetComponent<Renderer>();
+    for (int i = 0; i < 50; i++)
+    {
+        r.material.color = Random.ColorHSV();
+        transform.Rotate(0, 15, 0);
+        yield return new WaitForSeconds(0.1f);
+    }
+}
+void SpawnReplacement(GameObject prefab)
+{
+    if (prefab == null) return;
+
+    Vector3 pos = transform.position;
+    Quaternion rot = transform.rotation;
+
+    Destroy(gameObject);
+
+    Instantiate(prefab, pos, rot);
+}
+
+
 
 }
