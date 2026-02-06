@@ -31,12 +31,14 @@ public class MailManager : MonoBehaviour
         currentAgency = (MailAgency)Random.Range(0, 5);
 
         currentMailText = BuildEmailText(currentAgency, currentRecipient.ownerName);
+        UIManager.Instance.ShowMailIcon();
+
     }
 
     private string BuildEmailText(MailAgency agency, string recipientName)
     {
         const string note =
-            "<i>Poznámka: Nevšímaj si adresáta. Doruč tam, kde je to najvýhodnejšie (veľa domov / bohatstvo).</i>";
+            "<i>Note: Do not follow the address. Deliver where it is most profitable (many houses / wealth).</i>";
 
         switch (agency)
         {
@@ -65,14 +67,14 @@ public class MailManager : MonoBehaviour
                 return
                     "<b>From:</b> Bank of Pigeonland\n\n" +
                     $"<b>To:</b> {recipientName}\n\n" +
-                    "<i>Poznámka: Banka odmeňuje chudobných s veľa domami.</i>\n\n" +
+                    note + "\n\n" +
                     "“Your accounts were reviewed.\nPlease enjoy the results.”";
 
             case MailAgency.CityRegistry:
                 return
                     "<b>From:</b> City Registry\n\n" +
                     $"<b>To:</b> {recipientName}\n\n" +
-                    "<i>Poznámka: Porovnaj domy vs. bohatstvo.</i>\n\n" +
+                    note + "\n\n" +
                     "“We updated our records.\nReality follows.”";
         }
 
@@ -83,5 +85,7 @@ public class MailManager : MonoBehaviour
     {
         currentRecipient = null;
         currentMailText = null;
+        UIManager.Instance.HideMailIcon();
+
     }
 }

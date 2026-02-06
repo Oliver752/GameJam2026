@@ -7,11 +7,15 @@ public class UIManager : MonoBehaviour
 
     public GameObject mailPanel;
     public TMP_Text mailText;
+    public GameObject mailIcon;
 
     void Awake()
     {
         Instance = this;
         mailPanel.SetActive(false);
+        if (mailIcon != null)
+    mailIcon.SetActive(false);
+
     }
 
     public void ShowMail(string text)
@@ -38,5 +42,18 @@ public class UIManager : MonoBehaviour
     else
         ShowMail(text);
 }
+
+public void ShowMailIcon()
+{
+    if (mailIcon != null)
+        mailIcon.SetActive(true);
+}
+
+public void HideMailIcon()
+{
+    if (mailIcon != null)
+        mailIcon.SetActive(false);
+}
+
 
 }
