@@ -30,4 +30,13 @@ public class UIManager : MonoBehaviour
         if (mailPanel.activeSelf && Input.GetKeyDown(KeyCode.Escape))
             HideMail();
     }
+
+    public void ToggleMail(string text)
+{
+    if (mailPanel.activeSelf)
+        HideMail();
+    else
+        ShowMail(text);
+}
+
 }
