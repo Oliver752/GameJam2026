@@ -16,14 +16,22 @@ public class MailBox : MonoBehaviour
             playerNear = false;
     }
 
-    void Update()
-    {
-        if (!playerNear) return;
+   void Update()
+{
+    if (!playerNear) return;
 
-        if (Input.GetKeyDown(KeyCode.F))
+    if (Input.GetKeyDown(KeyCode.F))
+    {
+        // ✅ ak už máš mail, len ho ukáž, NEGENERUJ nový
+        if (MailManager.Instance.HasMail())
         {
-            MailManager.Instance.TakeMail();
             UIManager.Instance.ShowMail(MailManager.Instance.currentMailText);
+            return;
         }
+
+        MailManager.Instance.TakeMail();
+        UIManager.Instance.ShowMail(MailManager.Instance.currentMailText);
     }
+}
+
 }

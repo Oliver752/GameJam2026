@@ -1420,7 +1420,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4efcaae0128b0094b9fd2ff87c3adbe6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::House
-  owner: {fileID: 0}
+  owner: {fileID: 768104787}
   interactDistance: 15
   player: {fileID: 1408345122}
   mailboxPoint: {fileID: 1865491887}
@@ -5626,7 +5626,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7575606d13b09cb4e988304838d4b0cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MailManager
-  owners: []
+  owners:
+  - {fileID: 1419483039}
+  - {fileID: 649786657}
+  - {fileID: 1978680911}
+  - {fileID: 1473083528}
+  - {fileID: 1759001567}
+  - {fileID: 1963628304}
+  - {fileID: 768104787}
+  - {fileID: 1756285768}
+  - {fileID: 2072798969}
+  - {fileID: 999103941}
+  - {fileID: 635897105}
+  - {fileID: 1278797865}
   currentAgency: 0
   currentRecipient: {fileID: 0}
   currentMailText: 
@@ -7293,7 +7305,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4efcaae0128b0094b9fd2ff87c3adbe6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::House
-  owner: {fileID: 0}
+  owner: {fileID: 1759001567}
   interactDistance: 15
   player: {fileID: 1408345122}
   mailboxPoint: {fileID: 1641210163}
@@ -9144,7 +9156,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4efcaae0128b0094b9fd2ff87c3adbe6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::House
-  owner: {fileID: 0}
+  owner: {fileID: 635897105}
   interactDistance: 15
   player: {fileID: 1408345122}
   mailboxPoint: {fileID: 1874565292}
@@ -14368,7 +14380,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4efcaae0128b0094b9fd2ff87c3adbe6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::House
-  owner: {fileID: 0}
+  owner: {fileID: 1759001567}
   interactDistance: 15
   player: {fileID: 1408345122}
   mailboxPoint: {fileID: 1167400935}
@@ -14731,6 +14743,49 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4221278372373114116, guid: a3237916b40054a4584e33e441e8027c, type: 3}
+--- !u!1 &444659813
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 444659814}
+  m_Layer: 0
+  m_Name: OWNERS
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &444659814
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 444659813}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1759001566}
+  - {fileID: 1963628303}
+  - {fileID: 649786656}
+  - {fileID: 768104786}
+  - {fileID: 635897104}
+  - {fileID: 999103940}
+  - {fileID: 1278797864}
+  - {fileID: 1419483038}
+  - {fileID: 1756285767}
+  - {fileID: 1978680910}
+  - {fileID: 2072798968}
+  - {fileID: 1473083527}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &450751401
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16904,7 +16959,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4efcaae0128b0094b9fd2ff87c3adbe6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::House
-  owner: {fileID: 0}
+  owner: {fileID: 1963628304}
   interactDistance: 15
   player: {fileID: 1408345122}
   mailboxPoint: {fileID: 1910347759}
@@ -20066,7 +20121,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4efcaae0128b0094b9fd2ff87c3adbe6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::House
-  owner: {fileID: 0}
+  owner: {fileID: 1278797865}
   interactDistance: 15
   player: {fileID: 1408345122}
   mailboxPoint: {fileID: 1813916036}
@@ -20534,6 +20589,55 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 8345959617387122035, guid: a7237e6fd7264984c94ab28373dffffe, type: 3}
+--- !u!1 &635897103
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 635897104}
+  - component: {fileID: 635897105}
+  m_Layer: 0
+  m_Name: owner_VictorCoop
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &635897104
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 635897103}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 444659814}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &635897105
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 635897103}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa24a2f01a20fcf469849e16340eaa2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::OwnerProfile
+  ownerName: Victor Coop
+  wealth: -2500
+  houses:
+  - {fileID: 252602044}
+  - {fileID: 1432950532}
 --- !u!1001 &647111896
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20638,6 +20742,55 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4221278372373114116, guid: a3237916b40054a4584e33e441e8027c, type: 3}
+--- !u!1 &649786655
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 649786656}
+  - component: {fileID: 649786657}
+  m_Layer: 0
+  m_Name: owner_CharlesRoof
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &649786656
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 649786655}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 444659814}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &649786657
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 649786655}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa24a2f01a20fcf469849e16340eaa2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::OwnerProfile
+  ownerName: Charles Roof
+  wealth: 5500
+  houses:
+  - {fileID: 936903690}
+  - {fileID: 1906105912}
 --- !u!1001 &649851563
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22083,7 +22236,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4efcaae0128b0094b9fd2ff87c3adbe6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::House
-  owner: {fileID: 0}
+  owner: {fileID: 999103941}
   interactDistance: 15
   player: {fileID: 1408345122}
   mailboxPoint: {fileID: 1928656200}
@@ -25572,6 +25725,55 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -4141995202998241767, guid: d06ad830a53bcca42b29c77640a8ccb8, type: 3}
+--- !u!1 &768104785
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 768104786}
+  - component: {fileID: 768104787}
+  m_Layer: 0
+  m_Name: owner_RobertKernel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &768104786
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 768104785}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 444659814}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &768104787
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 768104785}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa24a2f01a20fcf469849e16340eaa2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::OwnerProfile
+  ownerName: Robert Kernel
+  wealth: 2000
+  houses:
+  - {fileID: 2065366211}
+  - {fileID: 39960913}
 --- !u!1001 &773515102
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -29330,7 +29532,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4efcaae0128b0094b9fd2ff87c3adbe6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::House
-  owner: {fileID: 0}
+  owner: {fileID: 1759001567}
   interactDistance: 15
   player: {fileID: 1408345122}
   mailboxPoint: {fileID: 1354546701}
@@ -32001,7 +32203,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4efcaae0128b0094b9fd2ff87c3adbe6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::House
-  owner: {fileID: 0}
+  owner: {fileID: 649786657}
   interactDistance: 15
   player: {fileID: 1408345122}
   mailboxPoint: {fileID: 158798591}
@@ -34005,6 +34207,55 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 561726918514808017, guid: c1ce309713da2fe4ebd261468401160c, type: 3}
+--- !u!1 &999103939
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 999103940}
+  - component: {fileID: 999103941}
+  m_Layer: 0
+  m_Name: owner_ThomasWingman
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &999103940
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 999103939}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 444659814}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &999103941
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 999103939}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa24a2f01a20fcf469849e16340eaa2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::OwnerProfile
+  ownerName: Thomas Wingman
+  wealth: -6000
+  houses:
+  - {fileID: 1969487408}
+  - {fileID: 683445799}
 --- !u!1001 &1002420210
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -37742,7 +37993,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4efcaae0128b0094b9fd2ff87c3adbe6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::House
-  owner: {fileID: 0}
+  owner: {fileID: 1963628304}
   interactDistance: 15
   player: {fileID: 1408345122}
   mailboxPoint: {fileID: 1082957284}
@@ -41713,7 +41964,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4efcaae0128b0094b9fd2ff87c3adbe6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::House
-  owner: {fileID: 0}
+  owner: {fileID: 1473083528}
   interactDistance: 15
   player: {fileID: 1408345122}
   mailboxPoint: {fileID: 1178056705}
@@ -42391,6 +42642,55 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 8345959617387122035, guid: a7237e6fd7264984c94ab28373dffffe, type: 3}
+--- !u!1 &1278797863
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1278797864}
+  - component: {fileID: 1278797865}
+  m_Layer: 0
+  m_Name: ownerBarbaraGrain
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1278797864
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1278797863}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 444659814}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1278797865
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1278797863}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa24a2f01a20fcf469849e16340eaa2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::OwnerProfile
+  ownerName: Barbara Grain
+  wealth: 1200
+  houses:
+  - {fileID: 626648650}
+  - {fileID: 1538664274}
 --- !u!1 &1281399051
 GameObject:
   m_ObjectHideFlags: 0
@@ -44864,7 +45164,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4efcaae0128b0094b9fd2ff87c3adbe6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::House
-  owner: {fileID: 0}
+  owner: {fileID: 1963628304}
   interactDistance: 15
   player: {fileID: 1408345122}
   mailboxPoint: {fileID: 797398907}
@@ -48080,6 +48380,53 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4221278372373114116, guid: a3237916b40054a4584e33e441e8027c, type: 3}
+--- !u!1 &1419483037
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1419483038}
+  - component: {fileID: 1419483039}
+  m_Layer: 0
+  m_Name: owner_BorisGardener
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1419483038
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1419483037}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 444659814}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1419483039
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1419483037}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa24a2f01a20fcf469849e16340eaa2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::OwnerProfile
+  ownerName: Boris Gardener
+  wealth: -1000
+  houses: []
 --- !u!1001 &1424360169
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -48410,7 +48757,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4efcaae0128b0094b9fd2ff87c3adbe6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::House
-  owner: {fileID: 0}
+  owner: {fileID: 635897105}
   interactDistance: 15
   player: {fileID: 1408345122}
   mailboxPoint: {fileID: 1044373153}
@@ -50032,6 +50379,54 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -2305266590065991215, guid: 18f227f53ce9f0d4aac1c1275ececc30, type: 3}
+--- !u!1 &1473083526
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1473083527}
+  - component: {fileID: 1473083528}
+  m_Layer: 0
+  m_Name: owner_DorothyWhistle
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1473083527
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1473083526}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 444659814}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1473083528
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1473083526}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa24a2f01a20fcf469849e16340eaa2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::OwnerProfile
+  ownerName: Dorothy Whistle
+  wealth: 1600
+  houses:
+  - {fileID: 1266098990}
 --- !u!1001 &1473633122
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -51988,7 +52383,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4efcaae0128b0094b9fd2ff87c3adbe6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::House
-  owner: {fileID: 0}
+  owner: {fileID: 1278797865}
   interactDistance: 15
   player: {fileID: 1408345122}
   mailboxPoint: {fileID: 1705414243}
@@ -56475,7 +56870,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4efcaae0128b0094b9fd2ff87c3adbe6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::House
-  owner: {fileID: 0}
+  owner: {fileID: 1978680911}
   interactDistance: 15
   player: {fileID: 1408345122}
   mailboxPoint: {fileID: 880074941}
@@ -56824,7 +57219,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4efcaae0128b0094b9fd2ff87c3adbe6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::House
-  owner: {fileID: 0}
+  owner: {fileID: 1756285768}
   interactDistance: 15
   player: {fileID: 1408345122}
   mailboxPoint: {fileID: 395474122}
@@ -58901,6 +59296,104 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -4141995202998241767, guid: d06ad830a53bcca42b29c77640a8ccb8, type: 3}
+--- !u!1 &1756285766
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1756285767}
+  - component: {fileID: 1756285768}
+  m_Layer: 0
+  m_Name: owner_StephenDove
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1756285767
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1756285766}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 444659814}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1756285768
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1756285766}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa24a2f01a20fcf469849e16340eaa2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::OwnerProfile
+  ownerName: Stephen Dove
+  wealth: 2500
+  houses:
+  - {fileID: 1688900586}
+--- !u!1 &1759001565
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1759001566}
+  - component: {fileID: 1759001567}
+  m_Layer: 0
+  m_Name: owner_EdwardBeak
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1759001566
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1759001565}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 444659814}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1759001567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1759001565}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa24a2f01a20fcf469849e16340eaa2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::OwnerProfile
+  ownerName: Edward Beak
+  wealth: 6500
+  houses:
+  - {fileID: 419481943}
+  - {fileID: 229134083}
+  - {fileID: 857988169}
 --- !u!1001 &1760840088
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -63691,7 +64184,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4efcaae0128b0094b9fd2ff87c3adbe6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::House
-  owner: {fileID: 0}
+  owner: {fileID: 649786657}
   interactDistance: 15
   player: {fileID: 1408345122}
   mailboxPoint: {fileID: 1232930735}
@@ -64996,7 +65489,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4efcaae0128b0094b9fd2ff87c3adbe6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::House
-  owner: {fileID: 0}
+  owner: {fileID: 2072798969}
   interactDistance: 15
   player: {fileID: 1408345122}
   mailboxPoint: {fileID: 2133771242}
@@ -65819,6 +66312,56 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1962875447}
   m_CullTransparentMesh: 1
+--- !u!1 &1963628302
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1963628303}
+  - component: {fileID: 1963628304}
+  m_Layer: 0
+  m_Name: owner_MarySeed
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1963628303
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1963628302}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 444659814}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1963628304
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1963628302}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa24a2f01a20fcf469849e16340eaa2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::OwnerProfile
+  ownerName: Mary Seed
+  wealth: 4200
+  houses:
+  - {fileID: 518334101}
+  - {fileID: 1154222889}
+  - {fileID: 1355006882}
 --- !u!1001 &1969487404
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -65941,7 +66484,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4efcaae0128b0094b9fd2ff87c3adbe6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::House
-  owner: {fileID: 0}
+  owner: {fileID: 999103941}
   interactDistance: 15
   player: {fileID: 1408345122}
   mailboxPoint: {fileID: 1992618859}
@@ -66168,6 +66711,54 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -6649735134400365339, guid: 6b7bc484ff0fd7a46b96fb846949039e, type: 3}
+--- !u!1 &1978680909
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1978680910}
+  - component: {fileID: 1978680911}
+  m_Layer: 0
+  m_Name: owner_ClaraPost
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1978680910
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1978680909}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 444659814}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1978680911
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1978680909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa24a2f01a20fcf469849e16340eaa2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::OwnerProfile
+  ownerName: Clara Post
+  wealth: 3000
+  houses:
+  - {fileID: 1666455856}
 --- !u!1001 &1992618858
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -68640,7 +69231,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4efcaae0128b0094b9fd2ff87c3adbe6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::House
-  owner: {fileID: 0}
+  owner: {fileID: 768104787}
   interactDistance: 15
   player: {fileID: 1408345122}
   mailboxPoint: {fileID: 985316291}
@@ -69109,6 +69700,54 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2070400187}
   m_CullTransparentMesh: 1
+--- !u!1 &2072798967
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2072798968}
+  - component: {fileID: 2072798969}
+  m_Layer: 0
+  m_Name: owner_Susan_Sparrow
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2072798968
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2072798967}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 444659814}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2072798969
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2072798967}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa24a2f01a20fcf469849e16340eaa2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::OwnerProfile
+  ownerName: Susan Sparrow
+  wealth: 800
+  houses:
+  - {fileID: 1950290018}
 --- !u!1001 &2077680322
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -71851,4 +72490,5 @@ SceneRoots:
   - {fileID: 1210231150}
   - {fileID: 247195994}
   - {fileID: 7473633590220230560}
+  - {fileID: 444659814}
   - {fileID: 1835828795}
