@@ -6,6 +6,8 @@ public class MailManager : MonoBehaviour
 
     public string[] mails;
 
+    public string currentMail; // 🔥 TOTO CHÝBALO
+
     void Awake()
     {
         Instance = this;
@@ -14,5 +16,15 @@ public class MailManager : MonoBehaviour
     public string GetRandomMail()
     {
         return mails[Random.Range(0, mails.Length)];
+    }
+
+    public void TakeMail()
+    {
+        currentMail = GetRandomMail();
+    }
+
+    public bool HasMail()
+    {
+        return !string.IsNullOrEmpty(currentMail);
     }
 }

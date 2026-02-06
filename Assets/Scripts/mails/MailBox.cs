@@ -19,8 +19,10 @@ public class MailBox : MonoBehaviour
     void Update()
     {
         if (playerNear && Input.GetKeyDown(KeyCode.E))
-        {
-            UIManager.Instance.ShowMail(MailManager.Instance.GetRandomMail());
-        }
+{
+    MailManager.Instance.TakeMail();
+    UIManager.Instance.ShowMail(MailManager.Instance.currentMail);
+}
+
     }
 }
