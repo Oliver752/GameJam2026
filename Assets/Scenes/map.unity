@@ -1055,6 +1055,142 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -2131272024455027932, guid: b0a8caa9c5a23cc43a096c5aae8ba63f, type: 3}
+--- !u!1 &35636320
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 35636321}
+  - component: {fileID: 35636323}
+  - component: {fileID: 35636322}
+  m_Layer: 5
+  m_Name: happiness
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &35636321
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 35636320}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 807287570}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -70, y: 467}
+  m_SizeDelta: {x: 200, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &35636322
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 35636320}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: 70/100
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 7d3c5e2d0780bd542b5635ee41758b94, type: 2}
+  m_sharedMaterial: {fileID: 8638735993061824474, guid: 7d3c5e2d0780bd542b5635ee41758b94, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 40
+  m_fontSizeBase: 40
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_TextWrappingMode: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 0
+  m_ActiveFontFeatures: 6e72656b
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_EmojiFallbackSupport: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &35636323
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 35636320}
+  m_CullTransparentMesh: 1
 --- !u!1001 &38841925
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1284,12 +1420,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4efcaae0128b0094b9fd2ff87c3adbe6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::House
+  owner: {fileID: 0}
   interactDistance: 15
   player: {fileID: 1408345122}
   mailboxPoint: {fileID: 1865491887}
   confettiPrefab: {fileID: 7879206218034938203, guid: c70e229779f16154199b39dc7161f16e, type: 3}
-  flowerPrefab: {fileID: 2501598613198698422, guid: 67ea666659a5aa44cb935438dccc55bb, type: 3}
-  treePrefab: {fileID: 6022637595430182651, guid: 1538171944894f04aa63494e95cb0844, type: 3}
 --- !u!114 &39960916
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5491,8 +5626,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7575606d13b09cb4e988304838d4b0cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MailManager
-  currentMail: 
-  currentType: 0
+  owners: []
+  currentAgency: 0
+  currentRecipient: {fileID: 0}
+  currentMailText: 
 --- !u!4 &161847338
 Transform:
   m_ObjectHideFlags: 0
@@ -7156,12 +7293,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4efcaae0128b0094b9fd2ff87c3adbe6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::House
+  owner: {fileID: 0}
   interactDistance: 15
   player: {fileID: 1408345122}
   mailboxPoint: {fileID: 1641210163}
   confettiPrefab: {fileID: 7879206218034938203, guid: c70e229779f16154199b39dc7161f16e, type: 3}
-  flowerPrefab: {fileID: 2501598613198698422, guid: 67ea666659a5aa44cb935438dccc55bb, type: 3}
-  treePrefab: {fileID: 6022637595430182651, guid: 1538171944894f04aa63494e95cb0844, type: 3}
 --- !u!114 &229134086
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9008,12 +9144,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4efcaae0128b0094b9fd2ff87c3adbe6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::House
+  owner: {fileID: 0}
   interactDistance: 15
   player: {fileID: 1408345122}
   mailboxPoint: {fileID: 1874565292}
   confettiPrefab: {fileID: 7879206218034938203, guid: c70e229779f16154199b39dc7161f16e, type: 3}
-  flowerPrefab: {fileID: 2501598613198698422, guid: 67ea666659a5aa44cb935438dccc55bb, type: 3}
-  treePrefab: {fileID: 6022637595430182651, guid: 1538171944894f04aa63494e95cb0844, type: 3}
 --- !u!114 &252602047
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9979,12 +10114,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4efcaae0128b0094b9fd2ff87c3adbe6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::House
+  owner: {fileID: 0}
   interactDistance: 3
   player: {fileID: 0}
   mailboxPoint: {fileID: 0}
   confettiPrefab: {fileID: 7879206218034938203, guid: c70e229779f16154199b39dc7161f16e, type: 3}
-  flowerPrefab: {fileID: 2501598613198698422, guid: 67ea666659a5aa44cb935438dccc55bb, type: 3}
-  treePrefab: {fileID: 6022637595430182651, guid: 1538171944894f04aa63494e95cb0844, type: 3}
 --- !u!1001 &280037242
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10936,12 +11070,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4efcaae0128b0094b9fd2ff87c3adbe6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::House
+  owner: {fileID: 0}
   interactDistance: 3
   player: {fileID: 0}
   mailboxPoint: {fileID: 0}
   confettiPrefab: {fileID: 7879206218034938203, guid: c70e229779f16154199b39dc7161f16e, type: 3}
-  flowerPrefab: {fileID: 2501598613198698422, guid: 67ea666659a5aa44cb935438dccc55bb, type: 3}
-  treePrefab: {fileID: 6022637595430182651, guid: 1538171944894f04aa63494e95cb0844, type: 3}
 --- !u!1001 &319481643
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13692,12 +13825,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4efcaae0128b0094b9fd2ff87c3adbe6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::House
+  owner: {fileID: 0}
   interactDistance: 3
   player: {fileID: 0}
   mailboxPoint: {fileID: 0}
   confettiPrefab: {fileID: 7879206218034938203, guid: c70e229779f16154199b39dc7161f16e, type: 3}
-  flowerPrefab: {fileID: 2501598613198698422, guid: 67ea666659a5aa44cb935438dccc55bb, type: 3}
-  treePrefab: {fileID: 6022637595430182651, guid: 1538171944894f04aa63494e95cb0844, type: 3}
 --- !u!1001 &409678202
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14236,12 +14368,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4efcaae0128b0094b9fd2ff87c3adbe6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::House
+  owner: {fileID: 0}
   interactDistance: 15
   player: {fileID: 1408345122}
   mailboxPoint: {fileID: 1167400935}
   confettiPrefab: {fileID: 7879206218034938203, guid: c70e229779f16154199b39dc7161f16e, type: 3}
-  flowerPrefab: {fileID: 2501598613198698422, guid: 67ea666659a5aa44cb935438dccc55bb, type: 3}
-  treePrefab: {fileID: 6022637595430182651, guid: 1538171944894f04aa63494e95cb0844, type: 3}
 --- !u!114 &419481946
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15952,6 +16083,81 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 561726918514808017, guid: c1ce309713da2fe4ebd261468401160c, type: 3}
+--- !u!1 &486915198
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 486915199}
+  - component: {fileID: 486915201}
+  - component: {fileID: 486915200}
+  m_Layer: 5
+  m_Name: FILL
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &486915199
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 486915198}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 807287570}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -544.0692, y: 468.0044}
+  m_SizeDelta: {x: 680.114, y: 38.6982}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &486915200
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 486915198}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 05cb06a561a585440bab59508c105861, type: 3}
+  m_Type: 3
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 0
+  m_FillAmount: 0.7
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &486915201
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 486915198}
+  m_CullTransparentMesh: 1
 --- !u!1001 &495186287
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16698,12 +16904,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4efcaae0128b0094b9fd2ff87c3adbe6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::House
+  owner: {fileID: 0}
   interactDistance: 15
   player: {fileID: 1408345122}
   mailboxPoint: {fileID: 1910347759}
   confettiPrefab: {fileID: 7879206218034938203, guid: c70e229779f16154199b39dc7161f16e, type: 3}
-  flowerPrefab: {fileID: 2501598613198698422, guid: 67ea666659a5aa44cb935438dccc55bb, type: 3}
-  treePrefab: {fileID: 6022637595430182651, guid: 1538171944894f04aa63494e95cb0844, type: 3}
 --- !u!114 &518334104
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19861,12 +20066,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4efcaae0128b0094b9fd2ff87c3adbe6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::House
+  owner: {fileID: 0}
   interactDistance: 15
   player: {fileID: 1408345122}
   mailboxPoint: {fileID: 1813916036}
   confettiPrefab: {fileID: 7879206218034938203, guid: c70e229779f16154199b39dc7161f16e, type: 3}
-  flowerPrefab: {fileID: 2501598613198698422, guid: 67ea666659a5aa44cb935438dccc55bb, type: 3}
-  treePrefab: {fileID: 6022637595430182651, guid: 1538171944894f04aa63494e95cb0844, type: 3}
 --- !u!114 &626648653
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20954,6 +21158,81 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -6649735134400365339, guid: 6b7bc484ff0fd7a46b96fb846949039e, type: 3}
+--- !u!1 &665682938
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 665682939}
+  - component: {fileID: 665682941}
+  - component: {fileID: 665682940}
+  m_Layer: 5
+  m_Name: WHITE
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &665682939
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 665682938}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 807287570}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -872.51746, y: 481.86896}
+  m_SizeDelta: {x: 101.2615, y: 95.9702}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &665682940
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 665682938}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: f97a2f4b1e626174e938c733b21490fd, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &665682941
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 665682938}
+  m_CullTransparentMesh: 1
 --- !u!1001 &666960663
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21804,12 +22083,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4efcaae0128b0094b9fd2ff87c3adbe6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::House
+  owner: {fileID: 0}
   interactDistance: 15
   player: {fileID: 1408345122}
   mailboxPoint: {fileID: 1928656200}
   confettiPrefab: {fileID: 7879206218034938203, guid: c70e229779f16154199b39dc7161f16e, type: 3}
-  flowerPrefab: {fileID: 2501598613198698422, guid: 67ea666659a5aa44cb935438dccc55bb, type: 3}
-  treePrefab: {fileID: 6022637595430182651, guid: 1538171944894f04aa63494e95cb0844, type: 3}
 --- !u!114 &683445802
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22983,12 +23261,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4efcaae0128b0094b9fd2ff87c3adbe6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::House
+  owner: {fileID: 0}
   interactDistance: 3
   player: {fileID: 0}
   mailboxPoint: {fileID: 0}
   confettiPrefab: {fileID: 7879206218034938203, guid: c70e229779f16154199b39dc7161f16e, type: 3}
-  flowerPrefab: {fileID: 2501598613198698422, guid: 67ea666659a5aa44cb935438dccc55bb, type: 3}
-  treePrefab: {fileID: 6022637595430182651, guid: 1538171944894f04aa63494e95cb0844, type: 3}
 --- !u!1001 &706870077
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25518,12 +25795,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4efcaae0128b0094b9fd2ff87c3adbe6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::House
+  owner: {fileID: 0}
   interactDistance: 3
   player: {fileID: 0}
   mailboxPoint: {fileID: 0}
   confettiPrefab: {fileID: 7879206218034938203, guid: c70e229779f16154199b39dc7161f16e, type: 3}
-  flowerPrefab: {fileID: 2501598613198698422, guid: 67ea666659a5aa44cb935438dccc55bb, type: 3}
-  treePrefab: {fileID: 6022637595430182651, guid: 1538171944894f04aa63494e95cb0844, type: 3}
 --- !u!1001 &775555233
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27199,6 +27475,75 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4221278372373114116, guid: a3237916b40054a4584e33e441e8027c, type: 3}
+--- !u!1 &807287569
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 807287570}
+  - component: {fileID: 807287572}
+  - component: {fileID: 807287571}
+  m_Layer: 5
+  m_Name: HUD
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &807287570
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 807287569}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1289669167}
+  - {fileID: 486915199}
+  - {fileID: 665682939}
+  - {fileID: 35636321}
+  m_Father: {fileID: 1485132142}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -4, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &807287571
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 807287569}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76bcce48d00f58e4cb7f1e775531fd24, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HappinessBar
+  fillImage: {fileID: 486915200}
+  valueText: {fileID: 35636322}
+--- !u!114 &807287572
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 807287569}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 178704992c8e4a74db988a6683462639, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HappinessManager
+  happiness: 100
+  happinessBar: {fileID: 807287571}
 --- !u!1001 &810262026
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -28985,12 +29330,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4efcaae0128b0094b9fd2ff87c3adbe6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::House
+  owner: {fileID: 0}
   interactDistance: 15
   player: {fileID: 1408345122}
   mailboxPoint: {fileID: 1354546701}
   confettiPrefab: {fileID: 7879206218034938203, guid: c70e229779f16154199b39dc7161f16e, type: 3}
-  flowerPrefab: {fileID: 2501598613198698422, guid: 67ea666659a5aa44cb935438dccc55bb, type: 3}
-  treePrefab: {fileID: 6022637595430182651, guid: 1538171944894f04aa63494e95cb0844, type: 3}
 --- !u!114 &857988172
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31657,12 +32001,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4efcaae0128b0094b9fd2ff87c3adbe6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::House
+  owner: {fileID: 0}
   interactDistance: 15
   player: {fileID: 1408345122}
   mailboxPoint: {fileID: 158798591}
   confettiPrefab: {fileID: 7879206218034938203, guid: c70e229779f16154199b39dc7161f16e, type: 3}
-  flowerPrefab: {fileID: 2501598613198698422, guid: 67ea666659a5aa44cb935438dccc55bb, type: 3}
-  treePrefab: {fileID: 6022637595430182651, guid: 1538171944894f04aa63494e95cb0844, type: 3}
 --- !u!114 &936903693
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36713,12 +37056,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4efcaae0128b0094b9fd2ff87c3adbe6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::House
+  owner: {fileID: 0}
   interactDistance: 3
   player: {fileID: 0}
   mailboxPoint: {fileID: 0}
   confettiPrefab: {fileID: 7879206218034938203, guid: c70e229779f16154199b39dc7161f16e, type: 3}
-  flowerPrefab: {fileID: 2501598613198698422, guid: 67ea666659a5aa44cb935438dccc55bb, type: 3}
-  treePrefab: {fileID: 6022637595430182651, guid: 1538171944894f04aa63494e95cb0844, type: 3}
 --- !u!1001 &1130030751
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -37400,12 +37742,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4efcaae0128b0094b9fd2ff87c3adbe6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::House
+  owner: {fileID: 0}
   interactDistance: 15
   player: {fileID: 1408345122}
   mailboxPoint: {fileID: 1082957284}
   confettiPrefab: {fileID: 7879206218034938203, guid: c70e229779f16154199b39dc7161f16e, type: 3}
-  flowerPrefab: {fileID: 2501598613198698422, guid: 67ea666659a5aa44cb935438dccc55bb, type: 3}
-  treePrefab: {fileID: 1154222887}
 --- !u!114 &1154222892
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41372,12 +41713,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4efcaae0128b0094b9fd2ff87c3adbe6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::House
+  owner: {fileID: 0}
   interactDistance: 15
   player: {fileID: 1408345122}
   mailboxPoint: {fileID: 1178056705}
   confettiPrefab: {fileID: 7879206218034938203, guid: c70e229779f16154199b39dc7161f16e, type: 3}
-  flowerPrefab: {fileID: 2501598613198698422, guid: 67ea666659a5aa44cb935438dccc55bb, type: 3}
-  treePrefab: {fileID: 6022637595430182651, guid: 1538171944894f04aa63494e95cb0844, type: 3}
 --- !u!114 &1266098993
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41392,6 +41732,127 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::HouseInfo
   houseInfo: "Dorothy Whistle\r\n Wealth: 1 600 \u20AC\r\n Random fact: People sometimes
     ask her how she knows certain things."
+--- !u!1 &1269918181
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1269918182}
+  - component: {fileID: 1269918185}
+  - component: {fileID: 1269918184}
+  - component: {fileID: 1269918183}
+  m_Layer: 5
+  m_Name: Button
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1269918182
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1269918181}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2070400188}
+  m_Father: {fileID: 1904497928}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 861, y: -449}
+  m_SizeDelta: {x: 139.6943, y: 128.4861}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1269918183
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1269918181}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Button
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1269918184}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &1269918184
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1269918181}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 9f093c4d1d1c6af4eb3870f929b56e69, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1269918185
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1269918181}
+  m_CullTransparentMesh: 1
 --- !u!1001 &1270916039
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -42464,6 +42925,81 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1289286547}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1289669166
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1289669167}
+  - component: {fileID: 1289669169}
+  - component: {fileID: 1289669168}
+  m_Layer: 5
+  m_Name: HOUSE
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1289669167
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1289669166}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 807287570}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -545, y: 468}
+  m_SizeDelta: {x: 704.8169, y: 63.0449}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1289669168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1289669166}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: fee3da91ac8731d43ba73eb06a1bd0af, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1289669169
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1289669166}
+  m_CullTransparentMesh: 1
 --- !u!1 &1290428632 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 509999177018552415, guid: bcfec05f2f2a33246a92bb0b9547bb6f, type: 3}
@@ -44328,12 +44864,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4efcaae0128b0094b9fd2ff87c3adbe6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::House
+  owner: {fileID: 0}
   interactDistance: 15
   player: {fileID: 1408345122}
   mailboxPoint: {fileID: 797398907}
   confettiPrefab: {fileID: 7879206218034938203, guid: c70e229779f16154199b39dc7161f16e, type: 3}
-  flowerPrefab: {fileID: 2501598613198698422, guid: 67ea666659a5aa44cb935438dccc55bb, type: 3}
-  treePrefab: {fileID: 6022637595430182651, guid: 1538171944894f04aa63494e95cb0844, type: 3}
 --- !u!114 &1355006885
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -47875,12 +48410,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4efcaae0128b0094b9fd2ff87c3adbe6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::House
+  owner: {fileID: 0}
   interactDistance: 15
   player: {fileID: 1408345122}
   mailboxPoint: {fileID: 1044373153}
   confettiPrefab: {fileID: 7879206218034938203, guid: c70e229779f16154199b39dc7161f16e, type: 3}
-  flowerPrefab: {fileID: 2501598613198698422, guid: 67ea666659a5aa44cb935438dccc55bb, type: 3}
-  treePrefab: {fileID: 6022637595430182651, guid: 1538171944894f04aa63494e95cb0844, type: 3}
 --- !u!114 &1432950535
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -49062,12 +49596,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4efcaae0128b0094b9fd2ff87c3adbe6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::House
+  owner: {fileID: 0}
   interactDistance: 3
   player: {fileID: 0}
   mailboxPoint: {fileID: 0}
   confettiPrefab: {fileID: 7879206218034938203, guid: c70e229779f16154199b39dc7161f16e, type: 3}
-  flowerPrefab: {fileID: 2501598613198698422, guid: 67ea666659a5aa44cb935438dccc55bb, type: 3}
-  treePrefab: {fileID: 6022637595430182651, guid: 1538171944894f04aa63494e95cb0844, type: 3}
 --- !u!1001 &1459006156
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -49946,6 +50479,8 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1904497928}
+  - {fileID: 807287570}
   - {fileID: 861020628}
   - {fileID: 1962875448}
   m_Father: {fileID: 0}
@@ -51453,12 +51988,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4efcaae0128b0094b9fd2ff87c3adbe6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::House
+  owner: {fileID: 0}
   interactDistance: 15
   player: {fileID: 1408345122}
   mailboxPoint: {fileID: 1705414243}
   confettiPrefab: {fileID: 7879206218034938203, guid: c70e229779f16154199b39dc7161f16e, type: 3}
-  flowerPrefab: {fileID: 2501598613198698422, guid: 67ea666659a5aa44cb935438dccc55bb, type: 3}
-  treePrefab: {fileID: 6022637595430182651, guid: 1538171944894f04aa63494e95cb0844, type: 3}
 --- !u!114 &1538664277
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -51800,12 +52334,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4efcaae0128b0094b9fd2ff87c3adbe6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::House
+  owner: {fileID: 0}
   interactDistance: 3
   player: {fileID: 0}
   mailboxPoint: {fileID: 0}
   confettiPrefab: {fileID: 7879206218034938203, guid: c70e229779f16154199b39dc7161f16e, type: 3}
-  flowerPrefab: {fileID: 2501598613198698422, guid: 67ea666659a5aa44cb935438dccc55bb, type: 3}
-  treePrefab: {fileID: 6022637595430182651, guid: 1538171944894f04aa63494e95cb0844, type: 3}
 --- !u!1001 &1553768551
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -55942,12 +56475,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4efcaae0128b0094b9fd2ff87c3adbe6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::House
+  owner: {fileID: 0}
   interactDistance: 15
   player: {fileID: 1408345122}
   mailboxPoint: {fileID: 880074941}
   confettiPrefab: {fileID: 7879206218034938203, guid: c70e229779f16154199b39dc7161f16e, type: 3}
-  flowerPrefab: {fileID: 2501598613198698422, guid: 67ea666659a5aa44cb935438dccc55bb, type: 3}
-  treePrefab: {fileID: 6022637595430182651, guid: 1538171944894f04aa63494e95cb0844, type: 3}
 --- !u!114 &1666455859
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -56292,12 +56824,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4efcaae0128b0094b9fd2ff87c3adbe6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::House
+  owner: {fileID: 0}
   interactDistance: 15
   player: {fileID: 1408345122}
   mailboxPoint: {fileID: 395474122}
   confettiPrefab: {fileID: 7879206218034938203, guid: c70e229779f16154199b39dc7161f16e, type: 3}
-  flowerPrefab: {fileID: 2501598613198698422, guid: 67ea666659a5aa44cb935438dccc55bb, type: 3}
-  treePrefab: {fileID: 6022637595430182651, guid: 1538171944894f04aa63494e95cb0844, type: 3}
 --- !u!114 &1688900589
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -56639,12 +57170,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4efcaae0128b0094b9fd2ff87c3adbe6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::House
+  owner: {fileID: 0}
   interactDistance: 3
   player: {fileID: 0}
   mailboxPoint: {fileID: 0}
   confettiPrefab: {fileID: 7879206218034938203, guid: c70e229779f16154199b39dc7161f16e, type: 3}
-  flowerPrefab: {fileID: 2501598613198698422, guid: 67ea666659a5aa44cb935438dccc55bb, type: 3}
-  treePrefab: {fileID: 6022637595430182651, guid: 1538171944894f04aa63494e95cb0844, type: 3}
 --- !u!1001 &1696365835
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -62859,6 +63389,82 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -897719969060146656, guid: f4be66b3ded6d0247b9db2222d470123, type: 3}
+--- !u!1 &1904497927
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1904497928}
+  - component: {fileID: 1904497930}
+  - component: {fileID: 1904497929}
+  m_Layer: 5
+  m_Name: UIPanel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1904497928
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1904497927}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1269918182}
+  m_Father: {fileID: 1485132142}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1904497929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1904497927}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1904497930
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1904497927}
+  m_CullTransparentMesh: 1
 --- !u!1001 &1904810849
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -63085,12 +63691,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4efcaae0128b0094b9fd2ff87c3adbe6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::House
+  owner: {fileID: 0}
   interactDistance: 15
   player: {fileID: 1408345122}
   mailboxPoint: {fileID: 1232930735}
   confettiPrefab: {fileID: 7879206218034938203, guid: c70e229779f16154199b39dc7161f16e, type: 3}
-  flowerPrefab: {fileID: 2501598613198698422, guid: 67ea666659a5aa44cb935438dccc55bb, type: 3}
-  treePrefab: {fileID: 6022637595430182651, guid: 1538171944894f04aa63494e95cb0844, type: 3}
 --- !u!114 &1906105915
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -64391,12 +64996,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4efcaae0128b0094b9fd2ff87c3adbe6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::House
+  owner: {fileID: 0}
   interactDistance: 15
   player: {fileID: 1408345122}
   mailboxPoint: {fileID: 2133771242}
   confettiPrefab: {fileID: 7879206218034938203, guid: c70e229779f16154199b39dc7161f16e, type: 3}
-  flowerPrefab: {fileID: 2501598613198698422, guid: 67ea666659a5aa44cb935438dccc55bb, type: 3}
-  treePrefab: {fileID: 6022637595430182651, guid: 1538171944894f04aa63494e95cb0844, type: 3}
 --- !u!114 &1950290021
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -65337,12 +65941,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4efcaae0128b0094b9fd2ff87c3adbe6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::House
+  owner: {fileID: 0}
   interactDistance: 15
   player: {fileID: 1408345122}
   mailboxPoint: {fileID: 1992618859}
   confettiPrefab: {fileID: 7879206218034938203, guid: c70e229779f16154199b39dc7161f16e, type: 3}
-  flowerPrefab: {fileID: 2501598613198698422, guid: 67ea666659a5aa44cb935438dccc55bb, type: 3}
-  treePrefab: {fileID: 6022637595430182651, guid: 1538171944894f04aa63494e95cb0844, type: 3}
 --- !u!114 &1969487411
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -68037,12 +68640,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4efcaae0128b0094b9fd2ff87c3adbe6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::House
+  owner: {fileID: 0}
   interactDistance: 15
   player: {fileID: 1408345122}
   mailboxPoint: {fileID: 985316291}
   confettiPrefab: {fileID: 7879206218034938203, guid: c70e229779f16154199b39dc7161f16e, type: 3}
-  flowerPrefab: {fileID: 2501598613198698422, guid: 67ea666659a5aa44cb935438dccc55bb, type: 3}
-  treePrefab: {fileID: 6022637595430182651, guid: 1538171944894f04aa63494e95cb0844, type: 3}
 --- !u!114 &2065366214
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -68369,6 +68971,144 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 561726918514808017, guid: c1ce309713da2fe4ebd261468401160c, type: 3}
+--- !u!1 &2070400187
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2070400188}
+  - component: {fileID: 2070400190}
+  - component: {fileID: 2070400189}
+  m_Layer: 5
+  m_Name: Text (TMP)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2070400188
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2070400187}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1269918182}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2070400189
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2070400187}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: '
+
+'
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4281479730
+  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 24
+  m_fontSizeBase: 24
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_TextWrappingMode: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 0
+  m_ActiveFontFeatures: 6e72656b
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_EmojiFallbackSupport: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &2070400190
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2070400187}
+  m_CullTransparentMesh: 1
 --- !u!1001 &2077680322
 PrefabInstance:
   m_ObjectHideFlags: 0

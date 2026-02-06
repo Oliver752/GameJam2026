@@ -1,188 +1,84 @@
 using UnityEngine;
-using System.Collections;
 
 public class House : MonoBehaviour
 {
+    [Header("Owner")]
+    public OwnerProfile owner; // drag správnu osobu
+
     [Header("Interaction")]
     public float interactDistance = 3f;
     public Transform player;
-    public Transform mailboxPoint;   // <- drag mailbox here
+    public Transform mailboxPoint; // drag mailbox point sem
 
-    [Header("Effects / Prefabs")]
+    [Header("Decoration FX (optional)")]
     public ParticleSystem confettiPrefab;
-    public GameObject flowerPrefab;
-    public GameObject treePrefab;
-
-    private bool spinning;
 
     private void Start()
     {
-        // Auto-find player if not assigned
         if (player == null)
         {
             GameObject p = GameObject.FindGameObjectWithTag("Player");
-            if (p != null)
-                player = p.transform;
+            if (p != null) player = p.transform;
         }
 
         if (mailboxPoint == null)
-        {
-            Debug.LogWarning($"Mailbox point is missing on {gameObject.name}!");
-        }
+            Debug.LogWarning($"Mailbox point missing on {gameObject.name}");
+
+        if (owner == null)
+            Debug.LogWarning($"Owner missing on {gameObject.name}");
     }
 
     private void Update()
     {
         if (player == null || mailboxPoint == null) return;
 
-        // Distance check from mailbox, not from house center
         float dist = Vector3.Distance(player.position, mailboxPoint.position);
         bool playerNear = dist <= interactDistance;
 
-        // Deliver logic
-        if (playerNear && Input.GetKeyDown(KeyCode.F) && MailManager.Instance.HasMail())
-        {
-            Debug.Log("DELIVER!");
-            React();
+        if (!playerNear) return;
+        if (!Input.GetKeyDown(KeyCode.F)) return;
+        if (MailManager.Instance == null || !MailManager.Instance.HasMail()) return;
 
-            MailManager.Instance.currentMail = null;
-            UIManager.Instance.HideMail();
+        DeliverIfMatches();
+    }
+
+    private void DeliverIfMatches()
+    {
+        var mm = MailManager.Instance;
+        if (mm.currentRecipient == null)
+            return;
+
+        // ✅ DORUČÍ SA LEN AK DOM PATRÍ RECIPIENTOVI
+        if (owner != mm.currentRecipient)
+        {
+            Debug.Log("Wrong address - not delivered.");
+            return;
         }
 
-        // Reality test spinning
-        if (spinning)
-        {
-            transform.Rotate(Vector3.up * 200 * Time.deltaTime);
-        }
+        int delta = MailEffects.Apply(owner, mm.currentAgency);
+
+        if (HappinessManager.Instance != null)
+            HappinessManager.Instance.AddHappiness(delta);
+
+        // clear + UI
+        mm.ClearMail();
+        UIManager.Instance?.HideMail();
+
+        Debug.Log($"Delivered {mm.currentAgency} to {owner.ownerName}, happiness delta {delta}");
     }
 
-    private void React()
-    {
-        switch (MailManager.Instance.currentType)
-        {
-            case MailType.Taxes:
-                ConfettiAndDisappear();
-                break;
-
-            case MailType.Nothing:
-                ConfettiRain();
-                break;
-
-            case MailType.NotYours:
-                BecomeFlower();
-                break;
-
-            case MailType.BecomeSomeone:
-                BecomeFlowerColor();
-                break;
-
-            case MailType.Experiment:
-                FloatAway();
-                break;
-
-            case MailType.StopExisting:
-                gameObject.SetActive(false);
-                break;
-
-            case MailType.ChangeReality:
-                Camera.main.backgroundColor = Random.ColorHSV();
-                RenderSettings.fogColor = Random.ColorHSV();
-                break;
-
-            case MailType.Art:
-                StartCoroutine(ArtMode());
-                break;
-
-            case MailType.Replacement:
-                BecomeTree();
-                break;
-
-            case MailType.Shrink:
-                transform.localScale *= 0.5f;
-                break;
-
-            case MailType.Mistake:
-                transform.Rotate(180, 0, 0);
-                break;
-
-            case MailType.RealityTest:
-                spinning = true;
-                break;
-        }
-    }
-
-    private void BecomeFlowerColor()
-    {
-        transform.localScale *= 0.3f;
-
-        Renderer r = GetComponent<Renderer>();
-        if (r != null)
-            r.material.color = Color.magenta;
-    }
-
-    private void BecomeFlower()
-    {
-        SpawnReplacement(flowerPrefab);
-    }
-
-    private void BecomeTree()
-    {
-        SpawnReplacement(treePrefab);
-    }
-
-    private void FloatAway()
-    {
-        Rigidbody rb = gameObject.AddComponent<Rigidbody>();
-        rb.useGravity = false;
-        rb.linearVelocity = Vector3.up * 2f;
-
-        Destroy(gameObject, 8f);
-    }
-
-    private void ConfettiAndDisappear()
-    {
-        gameObject.SetActive(false);
-    }
-
-    private void ConfettiRain()
+    // called from DecorateAll()
+    public void Decorate()
     {
         if (confettiPrefab == null) return;
-
-        ParticleSystem fx = Instantiate(confettiPrefab, mailboxPoint.position, Quaternion.identity);
+        var fx = Object.Instantiate(confettiPrefab, mailboxPoint.position, Quaternion.identity);
         fx.Play();
-        Destroy(fx.gameObject, 5f);
+        Object.Destroy(fx.gameObject, 5f);
     }
 
-    private IEnumerator ArtMode()
-    {
-        Renderer r = GetComponent<Renderer>();
-        if (r == null) yield break;
-
-        for (int i = 0; i < 50; i++)
-        {
-            r.material.color = Random.ColorHSV();
-            transform.Rotate(0, 15, 0);
-            yield return new WaitForSeconds(0.1f);
-        }
-    }
-
-    private void SpawnReplacement(GameObject prefab)
-    {
-        if (prefab == null) return;
-
-        Vector3 pos = transform.position;
-        Quaternion rot = transform.rotation;
-
-        Destroy(gameObject);
-
-        Instantiate(prefab, pos, rot);
-    }
-
-    // Optional: visualize interact range in editor
     private void OnDrawGizmosSelected()
     {
         if (mailboxPoint == null) return;
-
         Gizmos.color = Color.yellow;
         Gizmos.DrawWireSphere(mailboxPoint.position, interactDistance);
     }

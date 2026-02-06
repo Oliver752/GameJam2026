@@ -18,11 +18,12 @@ public class MailBox : MonoBehaviour
 
     void Update()
     {
-        if (playerNear && Input.GetKeyDown(KeyCode.F))
-{
-    MailManager.Instance.TakeMail();
-    UIManager.Instance.ShowMail(MailManager.Instance.currentMail);
-}
+        if (!playerNear) return;
 
+        if (Input.GetKeyDown(KeyCode.F))
+        {
+            MailManager.Instance.TakeMail();
+            UIManager.Instance.ShowMail(MailManager.Instance.currentMailText);
+        }
     }
 }
