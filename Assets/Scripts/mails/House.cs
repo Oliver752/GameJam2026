@@ -35,37 +35,35 @@ public class House : MonoBehaviour
         float dist = Vector3.Distance(player.position, mailboxPoint.position);
         bool playerNear = dist <= interactDistance;
 
-        if (!playerNear) return;
-        if (!Input.GetKeyDown(KeyCode.F)) return;
-        if (MailManager.Instance == null || !MailManager.Instance.HasMail()) return;
+       if (playerNear && Input.GetKeyDown(KeyCode.F) && MailManager.Instance.HasMail())
+{
+    Deliver();
+}
 
-        DeliverIfMatches();
     }
 
-    private void DeliverIfMatches()
+   private void Deliver()
+{
+    var mm = MailManager.Instance;
+    if (mm == null || !mm.HasMail()) return;
+
+    if (owner == null)
     {
-        var mm = MailManager.Instance;
-        if (mm.currentRecipient == null)
-            return;
-
-        // ✅ DORUČÍ SA LEN AK DOM PATRÍ RECIPIENTOVI
-        if (owner != mm.currentRecipient)
-        {
-            Debug.Log("Wrong address - not delivered.");
-            return;
-        }
-
-        int delta = MailEffects.Apply(owner, mm.currentAgency);
-
-        if (HappinessManager.Instance != null)
-            HappinessManager.Instance.AddHappiness(delta);
-
-        // clear + UI
-        mm.ClearMail();
-        UIManager.Instance?.HideMail();
-
-        Debug.Log($"Delivered {mm.currentAgency} to {owner.ownerName}, happiness delta {delta}");
+        Debug.LogWarning($"House {gameObject.name} has no owner, cannot apply effects.");
+        return;
     }
+
+    // ✅ DORUČÍŠ AJ ZLE → efekt sa aplikuje na OWNERA TOHTO DOMU
+    int delta = MailEffects.Apply(owner, mm.currentAgency);
+
+    if (HappinessManager.Instance != null)
+        HappinessManager.Instance.AddHappiness(delta);
+
+    mm.ClearMail();
+    UIManager.Instance?.HideMail();
+
+    Debug.Log($"Delivered {mm.currentAgency} to HOUSE owner {owner.ownerName}, happiness delta {delta}");
+}
 
     // called from DecorateAll()
     public void Decorate()

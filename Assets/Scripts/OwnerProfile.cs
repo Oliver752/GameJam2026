@@ -6,7 +6,7 @@ public class OwnerProfile : MonoBehaviour
     public string ownerName;
 
     [Header("Stats")]
-    [Min(0)] public int wealth = 0; // "money"
+    public int wealth = 0;
     [Header("Houses owned by this person (drag all here)")]
     public House[] houses;
 
