@@ -1233,6 +1233,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -5820323842148037150, guid: 1aba325b49228444f984254f9580016e, type: 3}
       insertIndex: -1
       addedObject: {fileID: 39960913}
+    - targetCorrespondingSourceObject: {fileID: -5820323842148037150, guid: 1aba325b49228444f984254f9580016e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 39960916}
+    - targetCorrespondingSourceObject: {fileID: -8733229741088840161, guid: 1aba325b49228444f984254f9580016e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1277040902}
   m_SourcePrefab: {fileID: -4161369568681901532, guid: 1aba325b49228444f984254f9580016e, type: 3}
 --- !u!4 &39960910 stripped
 Transform:
@@ -1281,6 +1287,20 @@ MonoBehaviour:
   confettiPrefab: {fileID: 7879206218034938203, guid: c70e229779f16154199b39dc7161f16e, type: 3}
   flowerPrefab: {fileID: 2501598613198698422, guid: 67ea666659a5aa44cb935438dccc55bb, type: 3}
   treePrefab: {fileID: 6022637595430182651, guid: 1538171944894f04aa63494e95cb0844, type: 3}
+--- !u!114 &39960916
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 39960911}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbbf2bb425667cd47bcd5254db2b3e04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HouseInfo
+  houseInfo: "Robert Kernel\n Wealth: 2 000 \u20AC\n Random fact: Pays only in cash
+    and avoids long conversations."
 --- !u!1 &47502159
 GameObject:
   m_ObjectHideFlags: 0
@@ -7085,6 +7105,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3543622026835868518, guid: b80e406766b93774fa4f06d3931246d6, type: 3}
       insertIndex: -1
       addedObject: {fileID: 229134083}
+    - targetCorrespondingSourceObject: {fileID: 3543622026835868518, guid: b80e406766b93774fa4f06d3931246d6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 229134086}
   m_SourcePrefab: {fileID: -4161369568681901532, guid: b80e406766b93774fa4f06d3931246d6, type: 3}
 --- !u!4 &229134080 stripped
 Transform:
@@ -7133,6 +7156,20 @@ MonoBehaviour:
   confettiPrefab: {fileID: 7879206218034938203, guid: c70e229779f16154199b39dc7161f16e, type: 3}
   flowerPrefab: {fileID: 2501598613198698422, guid: 67ea666659a5aa44cb935438dccc55bb, type: 3}
   treePrefab: {fileID: 6022637595430182651, guid: 1538171944894f04aa63494e95cb0844, type: 3}
+--- !u!114 &229134086
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 229134081}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbbf2bb425667cd47bcd5254db2b3e04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HouseInfo
+  houseInfo: "Edward Beak\r\n Wealth: 6 500 \u20AC\r\n Random fact: Always checks
+    the locks twice before leaving."
 --- !u!1001 &229707541
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8917,6 +8954,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -5820323842148037150, guid: 1aba325b49228444f984254f9580016e, type: 3}
       insertIndex: -1
       addedObject: {fileID: 252602044}
+    - targetCorrespondingSourceObject: {fileID: -5820323842148037150, guid: 1aba325b49228444f984254f9580016e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 252602047}
   m_SourcePrefab: {fileID: -4161369568681901532, guid: 1aba325b49228444f984254f9580016e, type: 3}
 --- !u!4 &252602041 stripped
 Transform:
@@ -8965,6 +9005,20 @@ MonoBehaviour:
   confettiPrefab: {fileID: 7879206218034938203, guid: c70e229779f16154199b39dc7161f16e, type: 3}
   flowerPrefab: {fileID: 2501598613198698422, guid: 67ea666659a5aa44cb935438dccc55bb, type: 3}
   treePrefab: {fileID: 6022637595430182651, guid: 1538171944894f04aa63494e95cb0844, type: 3}
+--- !u!114 &252602047
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 252602042}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbbf2bb425667cd47bcd5254db2b3e04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HouseInfo
+  houseInfo: "Victor Coop\n Wealth: -2 500 \u20AC\n Random fact: Gets tense whenever
+    someone mentions banks."
 --- !u!1001 &257150737
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14116,6 +14170,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3543622026835868518, guid: b80e406766b93774fa4f06d3931246d6, type: 3}
       insertIndex: -1
       addedObject: {fileID: 419481943}
+    - targetCorrespondingSourceObject: {fileID: 3543622026835868518, guid: b80e406766b93774fa4f06d3931246d6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 419481946}
   m_SourcePrefab: {fileID: -4161369568681901532, guid: b80e406766b93774fa4f06d3931246d6, type: 3}
 --- !u!4 &419481940 stripped
 Transform:
@@ -14164,6 +14221,20 @@ MonoBehaviour:
   confettiPrefab: {fileID: 7879206218034938203, guid: c70e229779f16154199b39dc7161f16e, type: 3}
   flowerPrefab: {fileID: 2501598613198698422, guid: 67ea666659a5aa44cb935438dccc55bb, type: 3}
   treePrefab: {fileID: 6022637595430182651, guid: 1538171944894f04aa63494e95cb0844, type: 3}
+--- !u!114 &419481946
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 419481941}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbbf2bb425667cd47bcd5254db2b3e04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HouseInfo
+  houseInfo: "Edward Beak\n Wealth: 6 500 \u20AC\n Random fact: Always checks the
+    locks twice before leaving."
 --- !u!1 &426753631
 GameObject:
   m_ObjectHideFlags: 0
@@ -16558,6 +16629,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1663766659176777669, guid: bb8cf765685e87a459578d7395fdd217, type: 3}
       insertIndex: -1
       addedObject: {fileID: 518334101}
+    - targetCorrespondingSourceObject: {fileID: 1663766659176777669, guid: bb8cf765685e87a459578d7395fdd217, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 518334104}
   m_SourcePrefab: {fileID: -4161369568681901532, guid: bb8cf765685e87a459578d7395fdd217, type: 3}
 --- !u!4 &518334098 stripped
 Transform:
@@ -16606,6 +16680,20 @@ MonoBehaviour:
   confettiPrefab: {fileID: 7879206218034938203, guid: c70e229779f16154199b39dc7161f16e, type: 3}
   flowerPrefab: {fileID: 2501598613198698422, guid: 67ea666659a5aa44cb935438dccc55bb, type: 3}
   treePrefab: {fileID: 6022637595430182651, guid: 1538171944894f04aa63494e95cb0844, type: 3}
+--- !u!114 &518334104
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 518334099}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbbf2bb425667cd47bcd5254db2b3e04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HouseInfo
+  houseInfo: "Mary Seed\r\n Wealth: 4 200 \u20AC\r\n Random fact: Keeps all her papers
+    sorted by color, not by date."
 --- !u!1001 &520065651
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19701,6 +19789,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1663766659176777669, guid: bb8cf765685e87a459578d7395fdd217, type: 3}
       insertIndex: -1
       addedObject: {fileID: 626648650}
+    - targetCorrespondingSourceObject: {fileID: 1663766659176777669, guid: bb8cf765685e87a459578d7395fdd217, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 626648653}
   m_SourcePrefab: {fileID: -4161369568681901532, guid: bb8cf765685e87a459578d7395fdd217, type: 3}
 --- !u!4 &626648647 stripped
 Transform:
@@ -19749,6 +19840,20 @@ MonoBehaviour:
   confettiPrefab: {fileID: 7879206218034938203, guid: c70e229779f16154199b39dc7161f16e, type: 3}
   flowerPrefab: {fileID: 2501598613198698422, guid: 67ea666659a5aa44cb935438dccc55bb, type: 3}
   treePrefab: {fileID: 6022637595430182651, guid: 1538171944894f04aa63494e95cb0844, type: 3}
+--- !u!114 &626648653
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 626648648}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbbf2bb425667cd47bcd5254db2b3e04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HouseInfo
+  houseInfo: "Barbara Grain\r\n Wealth: 1 200 \u20AC\r\n Random fact: Buys only what
+    she can count on her fingers."
 --- !u!1 &628711293
 GameObject:
   m_ObjectHideFlags: 0
@@ -21624,6 +21729,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 83349215e21a96e4c9f6b0f3f7392e27, type: 3}
       insertIndex: -1
       addedObject: {fileID: 683445799}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 83349215e21a96e4c9f6b0f3f7392e27, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 683445802}
   m_SourcePrefab: {fileID: 100100000, guid: 83349215e21a96e4c9f6b0f3f7392e27, type: 3}
 --- !u!4 &683445796 stripped
 Transform:
@@ -21672,6 +21780,20 @@ MonoBehaviour:
   confettiPrefab: {fileID: 7879206218034938203, guid: c70e229779f16154199b39dc7161f16e, type: 3}
   flowerPrefab: {fileID: 2501598613198698422, guid: 67ea666659a5aa44cb935438dccc55bb, type: 3}
   treePrefab: {fileID: 6022637595430182651, guid: 1538171944894f04aa63494e95cb0844, type: 3}
+--- !u!114 &683445802
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 683445797}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbbf2bb425667cd47bcd5254db2b3e04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HouseInfo
+  houseInfo: "Thomas Wingman\r\n Wealth: -6 000 \u20AC\r\n Random fact: Has more
+    keys than he remembers doors for."
 --- !u!1001 &683839681
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23562,6 +23684,24 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 6602302412831896246, guid: 6881d3df53d65c141a8c1d5ce0dbf93c, type: 3}
+--- !u!1 &724197082 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 107447634391572318, guid: b80e406766b93774fa4f06d3931246d6, type: 3}
+  m_PrefabInstance: {fileID: 1666455852}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &724197086
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 724197082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbbf2bb425667cd47bcd5254db2b3e04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HouseInfo
+  houseInfo: 
 --- !u!1001 &728148711
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -28761,6 +28901,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1663766659176777669, guid: bb8cf765685e87a459578d7395fdd217, type: 3}
       insertIndex: -1
       addedObject: {fileID: 857988169}
+    - targetCorrespondingSourceObject: {fileID: 1663766659176777669, guid: bb8cf765685e87a459578d7395fdd217, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 857988172}
   m_SourcePrefab: {fileID: -4161369568681901532, guid: bb8cf765685e87a459578d7395fdd217, type: 3}
 --- !u!4 &857988166 stripped
 Transform:
@@ -28809,6 +28952,20 @@ MonoBehaviour:
   confettiPrefab: {fileID: 7879206218034938203, guid: c70e229779f16154199b39dc7161f16e, type: 3}
   flowerPrefab: {fileID: 2501598613198698422, guid: 67ea666659a5aa44cb935438dccc55bb, type: 3}
   treePrefab: {fileID: 6022637595430182651, guid: 1538171944894f04aa63494e95cb0844, type: 3}
+--- !u!114 &857988172
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 857988167}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbbf2bb425667cd47bcd5254db2b3e04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HouseInfo
+  houseInfo: "Edward Beak\n Wealth: 6 500 \u20AC\n Random fact: Always checks the
+    locks twice before leaving."
 --- !u!1001 &858793184
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -31413,6 +31570,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3543622026835868518, guid: b80e406766b93774fa4f06d3931246d6, type: 3}
       insertIndex: -1
       addedObject: {fileID: 936903690}
+    - targetCorrespondingSourceObject: {fileID: 3543622026835868518, guid: b80e406766b93774fa4f06d3931246d6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 936903693}
   m_SourcePrefab: {fileID: -4161369568681901532, guid: b80e406766b93774fa4f06d3931246d6, type: 3}
 --- !u!4 &936903687 stripped
 Transform:
@@ -31461,6 +31621,20 @@ MonoBehaviour:
   confettiPrefab: {fileID: 7879206218034938203, guid: c70e229779f16154199b39dc7161f16e, type: 3}
   flowerPrefab: {fileID: 2501598613198698422, guid: 67ea666659a5aa44cb935438dccc55bb, type: 3}
   treePrefab: {fileID: 6022637595430182651, guid: 1538171944894f04aa63494e95cb0844, type: 3}
+--- !u!114 &936903693
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 936903688}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbbf2bb425667cd47bcd5254db2b3e04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HouseInfo
+  houseInfo: "Charles Roof\r\n Wealth: 5 500 \u20AC\r\n Random fact: Never lets anyone
+    into the back rooms of his houses.\r\n"
 --- !u!1 &940787113
 GameObject:
   m_ObjectHideFlags: 0
@@ -37133,6 +37307,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 83349215e21a96e4c9f6b0f3f7392e27, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1154222889}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 83349215e21a96e4c9f6b0f3f7392e27, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1154222892}
   m_SourcePrefab: {fileID: 100100000, guid: 83349215e21a96e4c9f6b0f3f7392e27, type: 3}
 --- !u!4 &1154222886 stripped
 Transform:
@@ -37181,6 +37358,20 @@ MonoBehaviour:
   confettiPrefab: {fileID: 7879206218034938203, guid: c70e229779f16154199b39dc7161f16e, type: 3}
   flowerPrefab: {fileID: 2501598613198698422, guid: 67ea666659a5aa44cb935438dccc55bb, type: 3}
   treePrefab: {fileID: 1154222887}
+--- !u!114 &1154222892
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1154222887}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbbf2bb425667cd47bcd5254db2b3e04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HouseInfo
+  houseInfo: "Mary Seed\n Wealth: 4 200 \u20AC\n Random fact: Keeps all her papers
+    sorted by color, not by date."
 --- !u!1001 &1155854370
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -41103,6 +41294,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1663766659176777669, guid: bb8cf765685e87a459578d7395fdd217, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1266098990}
+    - targetCorrespondingSourceObject: {fileID: 1663766659176777669, guid: bb8cf765685e87a459578d7395fdd217, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1266098993}
   m_SourcePrefab: {fileID: -4161369568681901532, guid: bb8cf765685e87a459578d7395fdd217, type: 3}
 --- !u!4 &1266098987 stripped
 Transform:
@@ -41151,6 +41345,20 @@ MonoBehaviour:
   confettiPrefab: {fileID: 7879206218034938203, guid: c70e229779f16154199b39dc7161f16e, type: 3}
   flowerPrefab: {fileID: 2501598613198698422, guid: 67ea666659a5aa44cb935438dccc55bb, type: 3}
   treePrefab: {fileID: 6022637595430182651, guid: 1538171944894f04aa63494e95cb0844, type: 3}
+--- !u!114 &1266098993
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1266098988}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbbf2bb425667cd47bcd5254db2b3e04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HouseInfo
+  houseInfo: "Dorothy Whistle\r\n Wealth: 1 600 \u20AC\r\n Random fact: People sometimes
+    ask her how she knows certain things."
 --- !u!1001 &1270916039
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -41567,6 +41775,24 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -4141995202998241767, guid: d06ad830a53bcca42b29c77640a8ccb8, type: 3}
+--- !u!1 &1277040898 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -8733229741088840161, guid: 1aba325b49228444f984254f9580016e, type: 3}
+  m_PrefabInstance: {fileID: 39960909}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1277040902
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1277040898}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbbf2bb425667cd47bcd5254db2b3e04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HouseInfo
+  houseInfo: 
 --- !u!1001 &1278376816
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -44021,6 +44247,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 83349215e21a96e4c9f6b0f3f7392e27, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1355006882}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 83349215e21a96e4c9f6b0f3f7392e27, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1355006885}
   m_SourcePrefab: {fileID: 100100000, guid: 83349215e21a96e4c9f6b0f3f7392e27, type: 3}
 --- !u!4 &1355006879 stripped
 Transform:
@@ -44069,6 +44298,20 @@ MonoBehaviour:
   confettiPrefab: {fileID: 7879206218034938203, guid: c70e229779f16154199b39dc7161f16e, type: 3}
   flowerPrefab: {fileID: 2501598613198698422, guid: 67ea666659a5aa44cb935438dccc55bb, type: 3}
   treePrefab: {fileID: 6022637595430182651, guid: 1538171944894f04aa63494e95cb0844, type: 3}
+--- !u!114 &1355006885
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1355006880}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbbf2bb425667cd47bcd5254db2b3e04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HouseInfo
+  houseInfo: "Mary Seed\n Wealth: 4 200 \u20AC\n Random fact: Keeps all her papers
+    sorted by color, not by date."
 --- !u!1001 &1355737029
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -46474,6 +46717,7 @@ GameObject:
   - component: {fileID: 1408345120}
   - component: {fileID: 1408345119}
   - component: {fileID: 1408345118}
+  - component: {fileID: 1408345123}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -46717,6 +46961,27 @@ Transform:
   - {fileID: 1506315909}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1408345123
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1408345117}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3544a42b8b0e86a4e9a7c4306237e7e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BinocularController
+  binocularUI: {fileID: 1962875447}
+  infoText: {fileID: 1845782247}
+  playerCamera: {fileID: 628711297}
+  defaultCamPos: {x: 0, y: 1, z: -3}
+  binocularCamPos: {x: 0, y: 0.3, z: 6.5}
+  defaultFOV: 60
+  binocularFOV: 30
+  transitionSpeed: 5
+  maxDistance: 10000
 --- !u!1 &1409240536
 GameObject:
   m_ObjectHideFlags: 0
@@ -47526,6 +47791,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -5820323842148037150, guid: 1aba325b49228444f984254f9580016e, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1432950532}
+    - targetCorrespondingSourceObject: {fileID: -5820323842148037150, guid: 1aba325b49228444f984254f9580016e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1432950535}
   m_SourcePrefab: {fileID: -4161369568681901532, guid: 1aba325b49228444f984254f9580016e, type: 3}
 --- !u!4 &1432950529 stripped
 Transform:
@@ -47574,6 +47842,20 @@ MonoBehaviour:
   confettiPrefab: {fileID: 7879206218034938203, guid: c70e229779f16154199b39dc7161f16e, type: 3}
   flowerPrefab: {fileID: 2501598613198698422, guid: 67ea666659a5aa44cb935438dccc55bb, type: 3}
   treePrefab: {fileID: 6022637595430182651, guid: 1538171944894f04aa63494e95cb0844, type: 3}
+--- !u!114 &1432950535
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1432950530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbbf2bb425667cd47bcd5254db2b3e04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HouseInfo
+  houseInfo: "Victor Coop\r\n Wealth: -2 500 \u20AC\r\n Random fact: Gets tense whenever
+    someone mentions banks."
 --- !u!1001 &1438058802
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -49623,6 +49905,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 861020628}
+  - {fileID: 1962875448}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -51080,6 +51363,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 83349215e21a96e4c9f6b0f3f7392e27, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1538664274}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 83349215e21a96e4c9f6b0f3f7392e27, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1538664277}
   m_SourcePrefab: {fileID: 100100000, guid: 83349215e21a96e4c9f6b0f3f7392e27, type: 3}
 --- !u!4 &1538664271 stripped
 Transform:
@@ -51128,6 +51414,20 @@ MonoBehaviour:
   confettiPrefab: {fileID: 7879206218034938203, guid: c70e229779f16154199b39dc7161f16e, type: 3}
   flowerPrefab: {fileID: 2501598613198698422, guid: 67ea666659a5aa44cb935438dccc55bb, type: 3}
   treePrefab: {fileID: 6022637595430182651, guid: 1538171944894f04aa63494e95cb0844, type: 3}
+--- !u!114 &1538664277
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1538664272}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbbf2bb425667cd47bcd5254db2b3e04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HouseInfo
+  houseInfo: "Barbara Grain\r\n Wealth: 1 200 \u20AC\r\n Random fact: Buys only what
+    she can count on her fingers."
 --- !u!1001 &1540838176
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -55561,6 +55861,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3543622026835868518, guid: b80e406766b93774fa4f06d3931246d6, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1666455856}
+    - targetCorrespondingSourceObject: {fileID: 3543622026835868518, guid: b80e406766b93774fa4f06d3931246d6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1666455859}
+    - targetCorrespondingSourceObject: {fileID: 107447634391572318, guid: b80e406766b93774fa4f06d3931246d6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 724197086}
   m_SourcePrefab: {fileID: -4161369568681901532, guid: b80e406766b93774fa4f06d3931246d6, type: 3}
 --- !u!4 &1666455853 stripped
 Transform:
@@ -55609,6 +55915,20 @@ MonoBehaviour:
   confettiPrefab: {fileID: 7879206218034938203, guid: c70e229779f16154199b39dc7161f16e, type: 3}
   flowerPrefab: {fileID: 2501598613198698422, guid: 67ea666659a5aa44cb935438dccc55bb, type: 3}
   treePrefab: {fileID: 6022637595430182651, guid: 1538171944894f04aa63494e95cb0844, type: 3}
+--- !u!114 &1666455859
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1666455854}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbbf2bb425667cd47bcd5254db2b3e04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HouseInfo
+  houseInfo: "Clara Post\r\n Wealth: 3 000 \u20AC\r\n Random fact: Sends money away
+    every month and never explains why."
 --- !u!1001 &1683200166
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -55891,6 +56211,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3543622026835868518, guid: b80e406766b93774fa4f06d3931246d6, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1688900586}
+    - targetCorrespondingSourceObject: {fileID: 3543622026835868518, guid: b80e406766b93774fa4f06d3931246d6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1688900589}
   m_SourcePrefab: {fileID: -4161369568681901532, guid: b80e406766b93774fa4f06d3931246d6, type: 3}
 --- !u!4 &1688900583 stripped
 Transform:
@@ -55939,6 +56262,20 @@ MonoBehaviour:
   confettiPrefab: {fileID: 7879206218034938203, guid: c70e229779f16154199b39dc7161f16e, type: 3}
   flowerPrefab: {fileID: 2501598613198698422, guid: 67ea666659a5aa44cb935438dccc55bb, type: 3}
   treePrefab: {fileID: 6022637595430182651, guid: 1538171944894f04aa63494e95cb0844, type: 3}
+--- !u!114 &1688900589
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1688900584}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbbf2bb425667cd47bcd5254db2b3e04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HouseInfo
+  houseInfo: "Stephen Dove\r\n Wealth: 2 500 \u20AC\r\n Random fact: Someone else
+    usually ends up paying his bills."
 --- !u!1001 &1692398930
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -60975,6 +61312,142 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4221278372373114116, guid: a3237916b40054a4584e33e441e8027c, type: 3}
+--- !u!1 &1845782245
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1845782246}
+  - component: {fileID: 1845782248}
+  - component: {fileID: 1845782247}
+  m_Layer: 5
+  m_Name: Text (TMP)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1845782246
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1845782245}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1962875448}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 0, y: 540}
+  m_SizeDelta: {x: 800, y: 400}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1845782247
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1845782245}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: 
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 36
+  m_fontSizeBase: 36
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 1
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_TextWrappingMode: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 0
+  m_ActiveFontFeatures: 6e72656b
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_EmojiFallbackSupport: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1845782248
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1845782245}
+  m_CullTransparentMesh: 1
 --- !u!1001 &1852680214
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -62525,6 +62998,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1663766659176777669, guid: bb8cf765685e87a459578d7395fdd217, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1906105912}
+    - targetCorrespondingSourceObject: {fileID: 1663766659176777669, guid: bb8cf765685e87a459578d7395fdd217, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1906105915}
   m_SourcePrefab: {fileID: -4161369568681901532, guid: bb8cf765685e87a459578d7395fdd217, type: 3}
 --- !u!4 &1906105909 stripped
 Transform:
@@ -62573,6 +63049,20 @@ MonoBehaviour:
   confettiPrefab: {fileID: 7879206218034938203, guid: c70e229779f16154199b39dc7161f16e, type: 3}
   flowerPrefab: {fileID: 2501598613198698422, guid: 67ea666659a5aa44cb935438dccc55bb, type: 3}
   treePrefab: {fileID: 6022637595430182651, guid: 1538171944894f04aa63494e95cb0844, type: 3}
+--- !u!114 &1906105915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1906105910}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbbf2bb425667cd47bcd5254db2b3e04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HouseInfo
+  houseInfo: "Charles Roof\r\n Wealth: 5 500 \u20AC\r\n Random fact: Never lets anyone
+    into the back rooms of his houses.\r\n"
 --- !u!1001 &1910347758
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -63811,6 +64301,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1663766659176777669, guid: bb8cf765685e87a459578d7395fdd217, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1950290018}
+    - targetCorrespondingSourceObject: {fileID: 1663766659176777669, guid: bb8cf765685e87a459578d7395fdd217, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1950290021}
   m_SourcePrefab: {fileID: -4161369568681901532, guid: bb8cf765685e87a459578d7395fdd217, type: 3}
 --- !u!4 &1950290015 stripped
 Transform:
@@ -63859,6 +64352,20 @@ MonoBehaviour:
   confettiPrefab: {fileID: 7879206218034938203, guid: c70e229779f16154199b39dc7161f16e, type: 3}
   flowerPrefab: {fileID: 2501598613198698422, guid: 67ea666659a5aa44cb935438dccc55bb, type: 3}
   treePrefab: {fileID: 6022637595430182651, guid: 1538171944894f04aa63494e95cb0844, type: 3}
+--- !u!114 &1950290021
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1950290016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbbf2bb425667cd47bcd5254db2b3e04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HouseInfo
+  houseInfo: "Susan Sparrow\r\n Wealth: 800 \u20AC\r\n Random fact: Keeps copies
+    of documents \u201Cjust in case\u201D."
 --- !u!1001 &1953583298
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -64587,6 +65094,82 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -3073584583676081762, guid: a4acbecb68ff14f4bb08109f4f03a053, type: 3}
+--- !u!1 &1962875447
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1962875448}
+  - component: {fileID: 1962875450}
+  - component: {fileID: 1962875449}
+  m_Layer: 5
+  m_Name: BinocularOverlay
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1962875448
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1962875447}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1845782246}
+  m_Father: {fileID: 1485132142}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: -30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1962875449
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1962875447}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 417fcf78da16743479768f2cf358ec13, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1962875450
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1962875447}
+  m_CullTransparentMesh: 1
 --- !u!1001 &1969487404
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -64661,6 +65244,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3543622026835868518, guid: b80e406766b93774fa4f06d3931246d6, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1969487408}
+    - targetCorrespondingSourceObject: {fileID: 3543622026835868518, guid: b80e406766b93774fa4f06d3931246d6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1969487411}
   m_SourcePrefab: {fileID: -4161369568681901532, guid: b80e406766b93774fa4f06d3931246d6, type: 3}
 --- !u!4 &1969487405 stripped
 Transform:
@@ -64709,6 +65295,20 @@ MonoBehaviour:
   confettiPrefab: {fileID: 7879206218034938203, guid: c70e229779f16154199b39dc7161f16e, type: 3}
   flowerPrefab: {fileID: 2501598613198698422, guid: 67ea666659a5aa44cb935438dccc55bb, type: 3}
   treePrefab: {fileID: 6022637595430182651, guid: 1538171944894f04aa63494e95cb0844, type: 3}
+--- !u!114 &1969487411
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1969487406}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbbf2bb425667cd47bcd5254db2b3e04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HouseInfo
+  houseInfo: "Thomas Wingman\n Wealth: -6 000 \u20AC\n Random fact: Has more keys
+    than he remembers doors for."
 --- !u!1001 &1976711925
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -67341,6 +67941,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 83349215e21a96e4c9f6b0f3f7392e27, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2065366211}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 83349215e21a96e4c9f6b0f3f7392e27, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2065366214}
   m_SourcePrefab: {fileID: 100100000, guid: 83349215e21a96e4c9f6b0f3f7392e27, type: 3}
 --- !u!4 &2065366208 stripped
 Transform:
@@ -67389,6 +67992,20 @@ MonoBehaviour:
   confettiPrefab: {fileID: 7879206218034938203, guid: c70e229779f16154199b39dc7161f16e, type: 3}
   flowerPrefab: {fileID: 2501598613198698422, guid: 67ea666659a5aa44cb935438dccc55bb, type: 3}
   treePrefab: {fileID: 6022637595430182651, guid: 1538171944894f04aa63494e95cb0844, type: 3}
+--- !u!114 &2065366214
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2065366209}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbbf2bb425667cd47bcd5254db2b3e04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HouseInfo
+  houseInfo: "Robert Kernel\r\n Wealth: 2 000 \u20AC\r\n Random fact: Pays only in
+    cash and avoids long conversations."
 --- !u!1001 &2067029924
 PrefabInstance:
   m_ObjectHideFlags: 0
